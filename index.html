@@ -1,0 +1,21 @@
+---
+layout: default
+title: kevnk // Meet Kevin Kirchner, View His Work, and Read His Writings
+---
+
+<div id="home">
+    <section id="hi">
+        <h2>Hi, I'm Kevin Kirchner</h2>
+    </section>
+    <section id="view">
+        <h2>View My Works</h2>
+    </section>
+    <section id="read">
+        <h2>Read My Writings</h2>
+        <ul class="posts">
+            {% for post in site.posts %}
+            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>
