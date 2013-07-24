@@ -1,0 +1,137 @@
+main { display: block;}
+.container { width: 800px; margin: 0 auto; text-align: left; position: relative;}
+
+/*
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway%20300.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway Thin';
+    src: url('../fonts/Raleway%20100.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway Medium';
+    src: url('../fonts/Raleway%20400.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway ExtraBold';
+    src: url('../fonts/Raleway%20700.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+*/
+
+body {
+    font-family: 'Raleway';
+    font-weight: 400;
+    color: #7e716f;
+    font-size: 18px;
+    line-height: 1.3;
+}
+a { color: #d8a879; text-decoration: none;}
+a:hover { text-decoration: underline;}
+a:hover i { text-decoration: none;}
+
+/* Utilities ============================= */
+.a-left { text-align: left;}
+.a-right { text-align: right;}
+.right { float: right;}
+.left { float: left;}
+.light-txt { color: #ece0dc;}
+.orange-txt { color: #d8a879;}
+.brown-txt { color: #9f654e; }
+.light-gray-bg { background-color: #f4ecea; }
+.blue-txt { color: #71a6d8;}
+.light-blue-txt { color: #a8cde1;}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* GLOBAL ========================================= */
+h1,h2,h3,h4,h5,h6 { color: #71a6d8; font-weight: 100; margin:0; line-height: 2.6;}
+h1 i, h2 i, h3 i, h4 i, h5 i, h6 i { color: #a8cde1;}
+
+/* HEADER =========================================== */
+header { border-bottom: 2px solid #f4ecea; margin-bottom: 30px;}
+header .container {  height: 100px; }
+header a { text-decoration: none; display: block; }
+header .logo { position: absolute; left: 0; top:50%; line-height: 72px; margin-top: -36px;}
+header .logo a { font-size: 72px; font-weight: 200; color: #ece0dc;}
+header .logo a:hover { text-decoration: none;}
+header nav { position: absolute; right:0; top:50%; line-height: 72px; margin-top: -22px; width:340px; }
+header nav a { float: right; font-size: 30px; color: #d8a879; font-weight: 100;}
+header nav a:first-child { float: left;}
+header nav a:hover { text-decoration: underline;}
+
+
+/* FOOTER =========================================== */
+footer { border-top: 2px solid #f4ecea; padding:20px 0 50px; overflow: hidden; margin-top: 40px;}
+footer a { display: block; text-decoration: none; color: #d8a879; line-height: 1.5;}
+footer a:hover span { text-decoration: underline;}
+
+/* HOME =============================== */
+#welcome { font-size: 24px; color: #9f654e; text-align: right; padding:50px 400px 0 0; height: 302px; background: url("../images/face.jpg") right 50% no-repeat; background-size: 342px 342px; margin:20px 0 60px;}
+#welcome h2 { color: #9f654e; font-size: 36px; font-weight: 400; line-height: 1.2;}
+#welcome h2 strong { display: block; font-size: 48px; font-weight: 800;}
+#welcome p { margin-top: .5em;}
+
+#home_promo h3 a { display: block; font-size: 36px; color: #71a6d8;}
+#home_promo h3 a:hover { text-decoration: none;}
+.more-link { color: #71a6d8; display: block; text-align: right; margin-top: 30px; margin-bottom: 20px;}
+.more-link i { color: #a8cde1; margin-left: 5px;}
+ul.posts { color: #ece0dc; list-style: none; margin:0; padding: 0; font-size: 16px; }
+ul.posts a { display: block; font-size: 20px;}
+
+
+/* POSTS ============================== */
+
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}

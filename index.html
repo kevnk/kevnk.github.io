@@ -2,20 +2,25 @@
 layout: default
 title: kevnk // Meet Kevin Kirchner, View His Work, and Read His Writings
 ---
-
-<div id="home">
-    <section id="hi">
-        <h2>Hi, I'm Kevin Kirchner</h2>
-    </section>
-    <section id="view">
-        <h2>View My Works</h2>
-    </section>
-    <section id="read">
-        <h2>Read My Writings</h2>
+<section id="welcome">
+    <h2>Hello, my name is <strong>Kevin Kirchner</strong></h2>
+    <p>I'm an idea-driven prioneer,<br/> an architect of interfaces,<br/> and an entreprenuer.</p>
+</section>
+<section id="home_promo" class="clearfix">
+    <div class="left">
+        <h3><a href="/work" title="View My Work">View My Work <i class="icon-chevron-sign-down"></i></a></h3>
+        <a class="more-link" href="/work" title="View More">View More<i class="icon-chevron-sign-right"></i></a>
+    </div>
+    <div class="right">
+        <h3><a href="/blog" title="Read My Blog">Read My Blog <i class="icon-chevron-sign-down"></i></a></h3>
         <ul class="posts">
             {% for post in site.posts %}
-            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+            <li>
+                <span>{{ post.date | date_to_string }}</span>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
             {% endfor %}
         </ul>
-    </section>
-</div>
+        <a class="more-link" href="/blog" title="Read More">Read More<i class="icon-chevron-sign-right"></i></a>
+    </div>
+</section>
