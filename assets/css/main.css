@@ -31,6 +31,7 @@ html {
     background: url('../images/tweed.png') 50% 0;
     -webkit-box-shadow: 0 0px 30px 0px rgba(0, 0, 0, 0.25) inset;
     box-shadow: 0 0px 30px 0px rgba(0, 0, 0, 0.25) inset;
+    min-height:100%;
 }
 html,
 body {
