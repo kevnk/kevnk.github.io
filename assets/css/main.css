@@ -27,9 +27,13 @@ main { display: block;}
     font-style: normal;
 }
 */
+html {
+    background: url('../images/tweed.png') 50% 0;
+    -webkit-box-shadow: 0 0px 30px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 0 0px 30px 0px rgba(0, 0, 0, 0.25) inset;
+}
 html,
 body {
-    background: url('../images/tweed.png') 50% 0;
     font-family: 'Raleway';
     font-weight: 400;
     color: #7e716f;
@@ -70,10 +74,7 @@ h1,h2,h3,h4,h5,h6 { color: #333; font-weight: 100; margin:0; line-height: 2.6;}
 h1 i, h2 i, h3 i, h4 i, h5 i, h6 i { color: #666;}
 
 /* HEADER =========================================== */
-header {
-    -webkit-box-shadow: 0 0px 30px 0px rgba(0, 0, 0, 0.25) inset;
-    box-shadow: 0 0px 30px 0px rgba(0, 0, 0, 0.25) inset;
-}
+header { }
 header .container {  min-height: 90px; }
 header a { text-decoration: none; display: block; }
 header .logo { position: absolute; left: 0; top:0; line-height: 60px; margin-top: 20px;}
@@ -91,10 +92,7 @@ header .mobile-menu { display: none;}
 main { background:#fff; padding: 30px 0 40px;}
 
 /* FOOTER =========================================== */
-footer { padding:20px 0 50px; overflow: hidden;
-    -webkit-box-shadow: 0 0px 30px 0px rgba(0, 0, 0, 0.25) inset;
-    box-shadow: 0 0px 30px 0px rgba(0, 0, 0, 0.25) inset;
-}
+footer { padding:20px 0 50px; overflow: hidden;}
 footer a { display: block; text-decoration: none; color: #eee; line-height: 1.5;}
 footer a:hover span { text-decoration: underline;}
 footer a i { margin-right: 5px;}
@@ -232,5 +230,5 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-    html,body { background: url('../images/tweed_@2X.png') 50% 0; background-size:200px 200px;}
+    html { background: url('../images/tweed_@2X.png') 50% 0; background-size:200px 200px;}
 }
