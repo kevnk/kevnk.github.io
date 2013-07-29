@@ -75,7 +75,7 @@ h1,h2,h3,h4,h5,h6 { color: #333; font-weight: 100; margin:0; line-height: 2.6;}
 h1 i, h2 i, h3 i, h4 i, h5 i, h6 i { color: #666;}
 
 /* HEADER =========================================== */
-header { }
+header {padding-bottom: 15px; }
 header .container {  min-height: 90px; }
 header a { text-decoration: none; display: block; }
 header .logo { position: absolute; left: 0; top:0; line-height: 60px; margin-top: 20px;}
@@ -190,6 +190,14 @@ ul.posts a { display: block; font-size: 20px;}
     header nav a { margin-left: 20px;}
     header nav a:first-child + a { margin-left: 20px;}
     header nav a:first-child { margin-left: 0;}
+    header nav { display: none; text-align: center; position: static; margin-top: 0px; margin: 15px 0 0; width: auto; clear: both; border-bottom: 1px solid #666; border-top: 1px solid #444;}
+    header nav.active { display: block;}
+    header nav a { display: block; line-height: 50px; font-size: 24px; border-top: 1px solid #666; border-bottom: 1px solid #444; margin: 0 !important;}
+    header .mobile-menu { display: block; font-size: 25px; padding:5px 10px; line-height: 30px; margin: 40px -10px 10px 0; float: right;}
+    header .mobile-menu i { margin-right: 5px;}
+    header .mobile-menu:hover { text-decoration: none; }
+
+    footer a { line-height: 40px;}
 
     #welcome { margin-bottom: 20px;}
     #welcome .left { text-align: center; padding-top: 10px;}
@@ -202,16 +210,6 @@ ul.posts a { display: block; font-size: 20px;}
     #home_promo .left,
     #home_promo .right { float: none; width: inherit; }
     #home_promo h3 a { font-size: 36px;}
-}
-@media screen and (max-width:600px) {
-    header { padding-bottom: 15px;}
-    header nav { display: none; text-align: center; position: static; margin-top: 0px; margin: 15px 0 0; width: auto; clear: both; border-bottom: 1px solid #666; border-top: 1px solid #444;}
-    header nav.active { display: block;}
-    header nav a { display: block; line-height: 50px; font-size: 24px; border-top: 1px solid #666; border-bottom: 1px solid #444; margin: 0 !important;}
-    header .mobile-menu { display: block; font-size: 25px; padding:5px 10px; line-height: 30px; margin: 40px -10px 10px 0; float: right;}
-    header .mobile-menu i { margin-right: 5px;}
-    header .mobile-menu:hover { text-decoration: none; }
-    footer a { line-height: 40px;}
 }
 @media screen and (max-width:525px) {
     footer .right { text-align: left; clear: both; float: none;}
