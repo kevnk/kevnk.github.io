@@ -100,7 +100,7 @@ footer a i { margin-right: 5px;}
 footer a i.icon-linkedin-sign { margin-right: 2px;}
 
 /* HOME =============================== */
-#welcome { font-size: 24px; color: #666; text-align: right; margin:20px 0 60px; overflow: hidden;}
+#welcome { font-size: 24px; color: #666; text-align: right; margin:20px 0 40px; overflow: hidden;}
 #welcome .left { width:340px; padding:80px 0 0 0; }
 #welcome .right { width: 400px; }
 #welcome .right img { width: 100%; border-radius: 50%; }
@@ -117,6 +117,10 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 ul.posts { color: #ccc; list-style: none; margin:0; padding: 0; font-size: 16px; }
 ul.posts a { display: block; font-size: 20px;}
 
+ul.work-posts { list-style: none; margin:0 0 0 -8px; padding:0; overflow: hidden;}
+ul.work-posts a { display: block; width: 94px; height: 94px; float: left; margin: 0 8px 8px 0; overflow: hidden; background: #eee; opacity:0.75;}
+ul.work-posts a:hover { opacity:1; }
+ul.work-posts a img { min-height: 94px; }
 
 /* POSTS ============================== */
 

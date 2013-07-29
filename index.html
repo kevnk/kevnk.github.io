@@ -13,19 +13,30 @@ title: kevnk // Meet Kevin Kirchner, View His Work, and Read His Writings
 </section>
 <section id="home_promo" class="clearfix">
     <div class="left">
-        <h3><a href="/work" title="View My Work">View My Work <i class="icon-chevron-sign-down"></i></a></h3>
-        <a class="more-link" href="/work" title="View More">View More<i class="icon-chevron-sign-right"></i></a>
-    </div>
-    <div class="right">
         <h3><a href="/blog" title="Read My Blog">Read My Blog <i class="icon-chevron-sign-down"></i></a></h3>
         <ul class="posts">
             {% for post in site.posts %}
+            {% if post.category != 'work' %}
             <li>
                 <span>{{ post.date | date_to_string }}</span>
                 <a href="{{ post.url }}">{{ post.title }}</a>
             </li>
+            {% endif %}
             {% endfor %}
         </ul>
         <a class="more-link" href="/blog" title="Read More">Read More<i class="icon-chevron-sign-right"></i></a>
+    </div>
+    <div class="right">
+        <h3><a href="/work" title="View My Work">View My Work <i class="icon-chevron-sign-down"></i></a></h3>
+        <ul class="work-posts">
+            {% for post in site.posts %}
+            {% if post.category == 'work' %}
+            <li>
+                <a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ post.thumb }}" alt="{{ post.title }}"/></a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        <a class="more-link" href="/work" title="View More">View More<i class="icon-chevron-sign-right"></i></a>
     </div>
 </section>
