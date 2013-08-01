@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Therawear.com"
-date:   2012-05-01 13:49:01
+title:  "BibleRead.in"
+date:   2013-06-15 13:49:01
 category: "work"
-thumb: "/assets/images/work/tw-thumb.png"
+thumb: "/assets/images/work/br-thumb.png"
 tags:
-- magento
+- git-repo
 ---
 
 

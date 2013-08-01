@@ -5,12 +5,14 @@ title: kevnk // Read Kevin Kirchner's Writings
 
 <section id="blog">
     <h1>Blog</h1>
-    <ul class="posts">
+    <ul class="blog-posts">
         {% for post in site.posts %}
+        {% if post.category != 'work' %}
         <li>
             <span>{{ post.date | date_to_string }}</span>
             <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
+        {% endif %}
         {% endfor %}
     </ul>
 </section>
