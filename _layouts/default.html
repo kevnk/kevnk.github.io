@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>kevnk // {{ page.title }}{% unless page.title contains "Kirchner" %} // by Kevin Kirchner {% endunless %}</title>
-        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Kevin Kirchner is an idea-driven pioneer, an architect of interfaces, and an entrepreneur." />
+        <meta name="keywords" content="Kevin Kirchner,web developer,designer,frontend,developer,interface architect,user interface,ui,ux" />
+        <meta name="robots" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- TODO: -->
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
         <link rel="stylesheet" href="/assets/css/normalize.css">
         <link href='http://fonts.googleapis.com/css?family=Raleway:100,400,800' rel='stylesheet' type='text/css'>
@@ -41,7 +53,9 @@
                 </div>
             </div>
         </footer>
-        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <!--<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>-->
+        <script src="/assets/vendor/jquery/jquery-2.0.3.min.js"></script>
+        <script src="/assets/vendor/modernizr-2.6.2.dev.js"></script>
         <script src="/assets/js/kevnk.js"></script>
     </body>
 </html>

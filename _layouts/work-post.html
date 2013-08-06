@@ -2,8 +2,7 @@
 layout: default
 ---
 {% if page.thumb %}
-<div class="left title-thumb">
-    <img src="{{ page.thumb }}" alt="{{ page.title }}"/>
+<div class="left title-thumb" style="background-image: url('{{ page.thumb }}');">
 </div>
 {% endif %}
 <h1 class="post-title">{{ page.title }}</h1>
