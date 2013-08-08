@@ -51,6 +51,7 @@ a:hover i { text-decoration: none;}
 .a-right { text-align: right;}
 .right { float: right;}
 .left { float: left;}
+.no-display { display: none;}
 .light-txt { color: #ccc;}
 .blue-txt { color: #71a6d8;}
 .light-blue-txt { color: #a8cde1;}
@@ -86,8 +87,6 @@ header .logo a:hover { text-decoration: none;}
 header nav { position: absolute; right:0; top:50%; line-height: 60px; margin-top: -14px; width:400px; text-align: right;}
 header nav a,
 header .mobile-menu { display: inline-block; margin-left: 45px; font-size: 18px; color: #eee; font-weight: 400;}
-header nav a:first-child { margin-left: 0; float: left;}
-header nav a:first-child + a { margin-left: 0;}
 header nav a:hover { text-decoration: underline;}
 header .mobile-menu { display: none;}
 
@@ -102,33 +101,28 @@ footer a i { margin-right: 5px;}
 footer a i.icon-linkedin-sign { margin-right: 2px;}
 
 /* HOME =============================== */
+.profile-pic { border-radius: 50%; }
 #welcome { font-size: 24px; color: #666; text-align: right; margin:20px 0 40px; overflow: hidden;}
 #welcome .left { width:340px; padding:80px 0 0 0; }
 #welcome .right { width: 400px; }
-#welcome .right img { width: 100%; border-radius: 50%; }
+#welcome .right .profile-pic { width: 100%; }
 #welcome h2 { color: #666; font-size: 36px; font-weight: 400; line-height: 1.2;}
 #welcome h2 strong { display: block; font-size: 48px; font-weight: 800;}
 #welcome p { margin-top: .5em;}
 
-#home_promo h3 a { display: block; font-size: 36px; color: #555; text-transform: none; font-weight: 200;}
-#home_promo h3 a:hover { text-decoration: none;}
-#home_promo .left { width: 340px;}
-#home_promo .right { width: 400px;}
-#home_promo .more-link { display: block; text-align: right; margin-top: 30px; margin-bottom: 20px;}
-#home_promo .more-link i { margin-left: 5px;}
-#home_promo .blog-posts { color: #ccc; list-style: none; margin:0; padding: 0; font-size: 16px; }
-#home_promo ul.blog-posts li { margin-bottom: 7px;}
-#home_promo ul.blog-posts a { display: block; font-size: 20px; }
-#home_promo ul.work-posts { list-style: none; margin:0 0 0 -8px; padding:0; overflow: hidden;}
-#home_promo ul.work-posts a { display: block; width: 94px; height: 94px; float: left; margin: 0 8px 8px 0; overflow: hidden; opacity:1; border-radius: 50%; -webkit-box-shadow: inset 0px 0px 40px 20px rgba(0, 0, 0, .2); box-shadow: inset 0px 0px 40px 20px rgba(0, 0, 0, .2); transition: all .4s ease; -moz-transition: all .4s ease; -webkit-transition: all .4s ease;}
-#home_promo ul.work-posts a:hover { opacity:1; -webkit-box-shadow: inset 0px 0px 20px 3px rgba(0, 0, 0, .1); box-shadow: inset 0px 0px 20px 3px rgba(0, 0, 0, .1);}
+#blog_feature h3 a,
+#about h3 { display: block; font-size: 36px; color: #555; text-transform: none; font-weight: 200;}
+#blog_feature h3 a:hover { text-decoration: none;}
+#blog_feature .more-link { display: block; text-align: right; margin-top: 30px; margin-bottom: 20px;}
+#blog_feature .more-link i { margin-left: 5px;}
+#blog_feature .blog-posts { color: #ccc; list-style: none; margin:0; padding: 0; font-size: 16px; }
+#blog_feature .blog-posts li { margin-bottom: 7px;}
+#blog_feature .blog-posts a { display: block; font-size: 20px; }
 
 /* POSTS ============================== */
 main .post-title { margin-bottom: .25em;}
 main .post-date { font-size: 15px; margin-bottom: 2em; }
 
-/* Work Posts ----------------------- */
-.title-thumb { border-radius: 50%; margin-right: 15px; width: 94px; height: 94px; -webkit-box-shadow: inset 0px 0px 20px 3px rgba(0, 0, 0, .1); box-shadow: inset 0px 0px 20px 3px rgba(0, 0, 0, .1);}
 
 
 /* standard */
@@ -170,24 +164,15 @@ main .post-date { font-size: 15px; margin-bottom: 2em; }
     #welcome { font-size: 22px; }
     #welcome h2 { font-size: 32px;}
     #welcome h2 strong { font-size: 40px;}
-    #welcome .left,
-    #home_promo .left { width: 42.5%;}
-    #welcome .right,
-    #home_promo .right { width: 50%;}
+    #welcome .left { width: 42.5%;}
+    #welcome .right { width: 50%;}
     header nav { width: 460px; }
-    header nav a { margin-left: 40px;}
-    header nav a:first-child + a { margin-left: 40px;}
-    header nav a:first-child { float: none; margin-left: 0;}
 }
 
 @media screen and (max-width:850px) {
     #welcome { font-size: 18px; }
     #welcome h2 { font-size: 28px;}
     #welcome h2 strong { font-size: 36px;}
-}
-
-@media screen and (max-width:750px) {
-    #home_promo h3 a { font-size: 30px;}
 }
 
 @media screen and (max-width:700px) {
@@ -197,17 +182,6 @@ main .post-date { font-size: 15px; margin-bottom: 2em; }
 }
 
 @media screen and (max-width:650px) {
-    /*header nav { width: 460px; }*/
-    header nav a { margin-left: 20px;}
-    header nav a:first-child + a { margin-left: 20px;}
-    header nav a:first-child { margin-left: 0;}
-    header nav { display: none; text-align: center; position: static; margin-top: 0px; margin: 15px 0 0; width: auto; clear: both; border-bottom: 1px solid #666; border-top: 1px solid #444;}
-    header nav.active { display: block;}
-    header nav a { display: block; line-height: 50px; font-size: 24px; border-top: 1px solid #666; border-bottom: 1px solid #444; margin: 0 !important;}
-    header .mobile-menu { display: block; font-size: 25px; padding:5px 10px; line-height: 30px; margin: 40px -10px 10px 0; float: right;}
-    header .mobile-menu i { margin-right: 5px;}
-    header .mobile-menu:hover { text-decoration: none; }
-
     footer a { line-height: 40px;}
 
     #welcome { margin-bottom: 20px;}
@@ -216,20 +190,37 @@ main .post-date { font-size: 15px; margin-bottom: 2em; }
     #welcome { font-size: 24px; }
     #welcome h2 { font-size: 36px;}
     #welcome h2 strong { font-size: 48px;}
-
-    #welcome .left,
-    #home_promo .left,
-    #home_promo .right { float: none; width: inherit; }
-    #home_promo h3 a { font-size: 36px;}
+    #welcome .left { float: none; width: inherit; }
+    
+    #blog_feature h3,
+    #about h3 { text-align: center;}
+    #about .profile-pic { display: block; width: 80%; margin:0 auto; display: block; max-width: 350px;}
 }
 @media screen and (max-width:525px) {
+    header nav a { margin-left: 20px;}
+    header nav { display: none; text-align: center; position: static; margin-top: 0px; margin: 15px 0 0; width: auto; clear: both; border-bottom: 1px solid #666; border-top: 1px solid #444;}
+    header nav.active { display: block;}
+    header nav a { display: block; line-height: 50px; font-size: 24px; border-top: 1px solid #666; border-bottom: 1px solid #444; margin: 0 !important;}
+    header .mobile-menu { display: block; font-size: 25px; padding:5px 10px; line-height: 30px; margin: 40px -10px 10px 0; float: right;}
+    header .mobile-menu i { margin-right: 5px;}
+    header .mobile-menu:hover { text-decoration: none; }
+
     footer .right { text-align: left; clear: both; float: none;}
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:425px) {
     #welcome { font-size: 22px; }
     #welcome h2 { font-size: 30px;}
     #welcome h2 strong { font-size: 39px;}
+
+    #about h3,
+    #blog_feature h3 a { font-size: 30px;}
 }
+
+@media screen and (max-width:350px) {
+    #about h3,
+    #blog_feature h3 a { font-size: 26px;}
+}
+
 
 
 /* Retina-specific stuff here */
