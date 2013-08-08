@@ -119,6 +119,19 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 #blog_feature .blog-posts li { margin-bottom: 7px;}
 #blog_feature .blog-posts a { display: block; font-size: 20px; }
 
+.about-title { font-size: 25px; font-weight: 500; text-align: center;}
+#lovehate { padding: 20px 0; margin: 20px 0 50px; border-bottom: 1px solid #eeeeee; border-top: 1px solid #eeeeee;}
+#lovehate li { list-style: none; position: relative;}
+#lovehate li:before { content:"- "; position: absolute; left:-13px;}
+#lovehate .left,
+#lovehate .right { width: 48%;}
+#perspectives { text-align: center; padding-bottom: 50px;}
+#perspectives .about-subtitle { font-size: 20px; position: relative; z-index: 2; margin: 50px 0 0; text-shadow: 0px 0px 5px #fff; filter: dropshadow(color=#fff, offx=0, offy=0);}
+/*#perspectives .about-subtitle:after { content:""; display:block; left: 15%; right:15%; border-top: 1px solid #eee; position: absolute; top:50%; z-index: -1 }*/
+#perspectives .thought { margin: 0; padding:1em; background: #f7f7f7; border-radius: 30px; font-weight: 500;}
+#perspectives .suggestion { font-weight: 400; font-size: 14px; color: #aaa; padding:1em 2em; }
+#life .about-subtitle { margin-top: 0;}
+
 /* POSTS ============================== */
 main .post-title { margin-bottom: .25em;}
 main .post-date { font-size: 15px; margin-bottom: 2em; }
@@ -195,6 +208,13 @@ main .post-date { font-size: 15px; margin-bottom: 2em; }
     #blog_feature h3,
     #about h3 { text-align: center;}
     #about .profile-pic { display: block; width: 80%; margin:0 auto; display: block; max-width: 350px;}
+
+    #lovehate .left,
+    #lovehate .right { float: none; width: auto;}
+}
+@media screen and (max-width:550px) {
+    #about h3,
+    #blog_feature h3 a { font-size: 30px;}
 }
 @media screen and (max-width:525px) {
     header nav a { margin-left: 20px;}
@@ -207,16 +227,10 @@ main .post-date { font-size: 15px; margin-bottom: 2em; }
 
     footer .right { text-align: left; clear: both; float: none;}
 }
-@media screen and (max-width:425px) {
+@media screen and (max-width:450px) {
     #welcome { font-size: 22px; }
     #welcome h2 { font-size: 30px;}
     #welcome h2 strong { font-size: 39px;}
-
-    #about h3,
-    #blog_feature h3 a { font-size: 30px;}
-}
-
-@media screen and (max-width:350px) {
     #about h3,
     #blog_feature h3 a { font-size: 26px;}
 }
