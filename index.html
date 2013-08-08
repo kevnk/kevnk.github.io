@@ -11,22 +11,7 @@ title: Meet Kevin Kirchner, View His Work, and Read His Writings
     <img src="/assets/images/face.jpg" alt="" class="profile-pic"/>
     </div>
 </section>
-<section id="blog_feature" class="clearfix">
-    <h3><a href="/blog" title="Read My Blog">Read My Blog <i class="icon-chevron-sign-down"></i></a></h3>
-    <ul class="blog-posts">
-        {% for post in site.posts limit:5 %}
-        {% if post.category != 'work' %}
-        <li>
-            <span>{{ post.date | date_to_string }}</span>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endif %}
-        {% endfor %}
-    </ul>
-    <a class="more-link" href="/blog" title="Read More">Read More<i class="icon-chevron-sign-right"></i></a>
-</section>
 <div id="about">
-    <h3>Hi, I'm Kevin Kirchner <i class="icon-chevron-sign-down"></i></h3>
     <img src="/assets/images/face.jpg" alt="" class="no-display profile-pic"/>
     <section id="lovehate" class="clearfix">
         <div id="love" class="left">
@@ -141,4 +126,18 @@ title: Meet Kevin Kirchner, View His Work, and Read His Writings
         </div>
     </section>
 -->
+    <section id="blog_feature" class="clearfix">
+        <h3><a href="/blog" title="Read My Blog">Read My Blog <i class="icon-chevron-sign-down"></i></a></h3>
+        <ul class="blog-posts">
+            {% for post in site.posts limit:5 %}
+            {% if post.category != 'work' %}
+            <li>
+                <span>{{ post.date | date_to_string }}</span>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+        <a class="more-link" href="/blog" title="Read More">Read More<i class="icon-chevron-sign-right"></i></a>
+    </section>
 </div>
