@@ -45,7 +45,30 @@
         <footer>
             <div class="container">
                 <div class="left">
-                    <a href="mailto:hello@kevnk.com"><span>hello@kevnk.com</span></a>
+                    <script type="text/javascript" language="javascript">
+                        <!--
+                        // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+                        // Random encryption key feature by Andrew Moulden, Site Engineering Ltd
+                        // This code is freeware provided these four comment lines remain intact
+                        // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+                        { coded = "i2TTb@K2dkK.gbV"
+                            key = "sFJUajuAYbVGx0DM1tHzh6OyEZC9rnIwBp4iXevc58SlkWLNRq3P2dg7omTKQf"
+                            shift=coded.length
+                            link=""
+                            for (i=0; i<coded.length; i++) {
+                                if (key.indexOf(coded.charAt(i))==-1) {
+                                    ltr = coded.charAt(i)
+                                    link += (ltr)
+                                }
+                                else {
+                                    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                                    link += (key.charAt(ltr))
+                                }
+                            }
+                            document.write("<a href='mailto:"+link+"'><span>"+link+"</span></a>")
+                        }
+                        //-->
+                    </script>
                     <a href="https://www.google.com/maps?q=Springfield,+MO" rel="external"><i class="icon-map-marker"></i><span>Springfield, Missouri</span></a>
                 </div>
                 <div class="right a-right">
