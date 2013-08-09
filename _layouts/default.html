@@ -81,5 +81,19 @@
         <script src="/assets/vendor/jquery/jquery-2.0.3.min.js"></script>
         <script src="/assets/vendor/modernizr-2.6.2.dev.js"></script>
         <script src="/assets/js/kevnk.js"></script>
+        {% unless page.comments_disabled %}
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'kevnk'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var s = document.createElement('script'); s.async = true;
+                s.type = 'text/javascript';
+                s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+            }());
+        </script>
+        {% endunless %}
     </body>
 </html>

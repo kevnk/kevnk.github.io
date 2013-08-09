@@ -145,7 +145,7 @@ main .post-title { margin-bottom: .25em;}
 main .post-date { font-size: 15px; margin-bottom: 2em; }
 .post,
 .blog-excerpt { color: #777777; margin: 1em 0 2em; padding-bottom: 2em; border-bottom: 1px solid #eeeeee; font-size: 22px; font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;}
-
+a.comment-toggle { position: absolute; left:0; bottom:-30px; }
 
 /* standard */
 .post pre {

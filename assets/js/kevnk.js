@@ -10,4 +10,12 @@
         return false;
     });
 
+    // Toggle Link
+    $('a[data-toggle]').on('click',function(e){
+        e.preventDefault();
+        var targetSelector = $(this).data('toggle');
+        $( targetSelector ).toggle();
+        return false;
+    })
+
 })(jQuery, this, document)
