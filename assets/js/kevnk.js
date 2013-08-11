@@ -16,6 +16,6 @@
         var targetSelector = $(this).data('toggle');
         $( targetSelector ).toggle();
         return false;
-    })
+    });
 
 })(jQuery, this, document)

@@ -134,6 +134,27 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 #perspectives .suggestion { font-weight: 400; font-size: 14px; color: #aaa; padding:1em 2em; }
 #life .about-subtitle { margin-top: 0;}
 
+#hours,
+#websites { text-align: center; margin:15px 0; padding:25px 0; float: left; width: 50%;}
+#websites { margin-bottom: 50px;}
+#hour_count,
+#website_count {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px 40px;
+    color: #ffffff;
+    background: #bbb;
+    border-radius: 200px;
+    display: inline-block;
+}
+#hour_count .sep { padding:0 5px;}
+#experience .about-subtitle { color: #999999; font-weight: 200; font-size: 22px; text-transform: none;}
+#websites .platforms { width: 85%; margin:0 auto;}
+#websites .platforms > div { width: 24.9%; float: left; }
+#websites .platforms .web-count { font-family: Arial, sans-serif; display: inline-block; background: #eee; padding:5px 10px; border-radius: 50px;}
+#websites .platforms h6 { color: #999; font-weight: 400;}
+
 /* BLOG LISTING PAGE */
 #blog .blog-posts a { font-size: 25px;}
 #blog .blog-posts .more-link { display: inline; font-size: .85em; padding-left: 10px;}
@@ -197,6 +218,10 @@ a.comment-toggle { position: absolute; left:0; bottom:-30px; }
     #welcome h2 strong { font-size: 36px;}
 }
 
+@media screen and (max-width:775px) {
+    #hours,#websites { float: none; width: auto;  border-bottom: 1px solid #eeeeee;}
+    #websites .platforms { width: auto;}
+}
 @media screen and (max-width:700px) {
     #welcome { font-size: 16px; }
     #welcome h2 { font-size: 24px;}

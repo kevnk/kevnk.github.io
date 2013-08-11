@@ -87,32 +87,37 @@ title: Meet Kevin Kirchner, View His Work, and Read His Writings
             <p class="suggestion">Be agile and flexible to change. Learn to love learning and embrace change. It <em>will</em> happen. How will you affect its direction?</p>
         </div>
     </section>
-<!--
     <section id="experience">
-        <h4 class="about-title">Kevin's Experience</h4>
+        <h4 class="about-title">My Experience</h4>
         <div id="hours">
-            <h5 class="about-subtitle"># of Hours Developing User Interfaces</h5>
-            <div id="hours_total">9556</div>
+            <div id="hour_count" class="clearfix">
+                <span id="work_hours"></span><span class="sep">:</span><span id="work_minutes"></span><span class="sep">:</span><span id="work_seconds"></span>
+            </div>
+            <h5 class="about-subtitle">Hours Developing User Interfaces</h5>
         </div>
         <div id="websites">
-            <h5 class="about-subtitle"># of Websites Worked On</h5>
-                <div id="websites_total">50</div>
-                <div class="platforms">
-                    <div class="magento">
-                        <h6>Magento</h6>
-                    </div>
-                    <div class="wordpress">
-                        <h6>Wordpress</h6>
-                    </div>
-                    <div class="drupal">
-                        <h6>Drupal</h6>
-                    </div>
-                    <div class="other">
-                        <h6>Other</h6>
-                    </div>
+            <div id="website_count">59</div>
+            <h5 class="about-subtitle">Websites Worked On</h5>
+            <div class="platforms clearfix">
+                <div class="magento">
+                    <div class="web-count">49</div>
+                    <h6>Magento</h6>
+                </div>
+                <div class="wordpress">
+                    <div class="web-count">5</div>
+                    <h6>Wordpress</h6>
+                </div>
+                <div class="drupal">
+                    <div class="web-count">3</div>
+                    <h6>Drupal</h6>
+                </div>
+                <div class="other">
+                    <div class="web-count">2</div>
+                    <h6>Other</h6>
                 </div>
             </div>
         </div>
+<!--
         <div id="tools">
             <h5 class="about-subtitle">Best Tools &amp; Resources</h5>
             <ul class="tools">
@@ -123,8 +128,8 @@ title: Meet Kevin Kirchner, View His Work, and Read His Writings
                 <li class="tool"></li>
             </ul>
         </div>
-    </section>
 -->
+    </section>
     <section id="blog_feature" class="clearfix">
         <h3><a href="/blog" title="Read My Blog">Read My Blog <i class="icon-chevron-sign-down"></i></a></h3>
         <ul class="blog-posts">
@@ -140,3 +145,53 @@ title: Meet Kevin Kirchner, View His Work, and Read His Writings
         <a class="more-link" href="/blog" title="Read More">Read More<i class="icon-chevron-sign-right"></i></a>
     </section>
 </div>
+<script type="text/javascript">
+    function daydiff(first, second) {
+        return (second-first)/(1000*60*60*24)
+    }
+    function addZero(num){
+        num = num+'';
+        if(num.length == 1)
+            return '0' + num;
+        return num
+    }
+    function runTime(){
+        var h = $hours.html();
+        var m = $minutes.html();
+        var s = $seconds.html();
+        s++;
+        if(s >= 60) {
+            s = 0;
+            m++;
+            if(m >= 60) {
+                m = 0;
+                h++;
+            }
+        }
+        $hours.html(addZero(h));
+        $minutes.html(addZero(m));
+        $seconds.html(addZero(s));
+
+    }
+    // Initial Hours and Date
+    var initHours = 9500;
+    var initDate = new Date(2013,8,1);
+    var now = new Date();
+    var daysSince = daydiff(initDate, now) * 5/7;
+    var hoursSince = daysSince * 8;
+    var hours = initHours + hoursSince;
+    var minutes = (hours - Math.floor(hours)) * 60;
+    var seconds = (minutes - Math.floor(minutes)) * 60;
+    var $hours = $('#work_hours').html(Math.floor(hours));
+    var $minutes = $('#work_minutes').html(Math.floor(minutes));
+    var $seconds = $('#work_seconds').html(Math.floor(seconds));
+    var dayOfWeek = now.getDay();
+    var hourOfDay = now.getHours();
+
+    // if weekday between 9am-5pm, run it
+    if(dayOfWeek != 0 && dayOfWeek != 6 && hourOfDay > 9 && hourOfDay < 17) {
+        setInterval(runTime,1000);
+    } else {
+        $('#hour_count').find('span').hide().filter('#work_hours').show();
+    }
+</script>
