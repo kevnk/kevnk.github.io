@@ -57,18 +57,22 @@ a:hover i { text-decoration: none;}
 .blue-txt { color: #71a6d8;}
 .light-blue-txt { color: #a8cde1;}
 
-.clearfix {
+.clearfix,
+.container {
     *zoom: 1;
 }
 
 .clearfix:before,
-.clearfix:after {
+.clearfix:after,
+.container:before,
+.container:after {
     display: table;
     line-height: 0;
     content: "";
 }
 
-.clearfix:after {
+.clearfix:after,
+.container:after {
     clear: both;
 }
 
@@ -79,13 +83,12 @@ main h1 { font-weight: 300; line-height: 1.5; border-bottom: 1px solid #eee; mar
 h1 i, h2 i, h3 i, h4 i, h5 i, h6 i { color: #666;}
 
 /* HEADER =========================================== */
-header {padding-bottom: 15px; }
-header .container {  min-height: 90px; }
+header { }
 header a { text-decoration: none; display: block; }
-header .logo { position: absolute; left: 0; top:0; line-height: 60px; margin-top: 20px;}
+header .logo { line-height: 80px; float: left;}
 header .logo a { font-size: 60px; font-weight: 200; color: #eee;}
 header .logo a:hover { text-decoration: none;}
-header nav { position: absolute; right:0; top:50%; line-height: 60px; margin-top: -14px; width:400px; text-align: right;}
+header nav { position: absolute; right:0; bottom:10px; line-height: 30px; width:400px; text-align: right; }
 header nav a,
 header .mobile-menu { display: inline-block; margin-left: 45px; font-size: 18px; color: #eee; font-weight: 400;}
 header nav a:hover { text-decoration: underline;}
@@ -104,7 +107,7 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 
 /* HOME =============================== */
 .profile-pic { border-radius: 50%; }
-#welcome { font-size: 24px; color: #666; text-align: right; margin:20px 0 40px; overflow: hidden;}
+#welcome { font-size: 24px; color: #666; text-align: right; margin:20px 0 30px; overflow: hidden;}
 #welcome .left { width:340px; padding:80px 0 0 0; }
 #welcome .right { width: 400px; }
 #welcome .right .profile-pic { width: 100%; }
@@ -122,21 +125,20 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 .blog-posts a { display: block; font-size: 20px; }
 
 .about-title { font-size: 25px; font-weight: 500; text-align: center;}
-#lovehate { padding: 20px 0; margin: 20px 0 50px; border-bottom: 1px solid #eeeeee; border-top: 1px solid #eeeeee;}
+#lovehate { padding: 20px 0; margin: 20px 0 20px; border-bottom: 1px solid #eeeeee;  border-top: 1px solid #eeeeee;}
 #lovehate li { list-style: none; position: relative;}
 #lovehate li:before { content:"- "; position: absolute; left:-13px;}
 #lovehate .left,
 #lovehate .right { width: 48%;}
-#perspectives { text-align: center; padding-bottom: 50px;}
-#perspectives .about-subtitle { font-size: 20px; position: relative; z-index: 2; margin: 50px 0 0; text-shadow: 0px 0px 5px #fff; filter: dropshadow(color=#fff, offx=0, offy=0);}
+#perspectives { text-align: center; padding-bottom: 20px; margin-bottom: 30px;  border-bottom: 1px solid #eeeeee;}
+#perspectives .about-subtitle { font-size: 20px; position: relative; z-index: 2; margin: 50px 0 10px; line-height: 1.4; text-shadow: 0px 0px 5px #fff; filter: dropshadow(color=#fff, offx=0, offy=0);}
 /*#perspectives .about-subtitle:after { content:""; display:block; left: 15%; right:15%; border-top: 1px solid #eee; position: absolute; top:50%; z-index: -1 }*/
 #perspectives .thought { margin: 0; padding:1em; background: #f7f7f7; border-radius: 30px; font-weight: 500;}
 #perspectives .suggestion { font-weight: 400; font-size: 14px; color: #aaa; padding:1em 2em; }
-#life .about-subtitle { margin-top: 0;}
+#life .about-subtitle { margin-top: 20px;}
 
 #hours,
 #websites { text-align: center; margin:15px 0; padding:25px 0; float: left; width: 50%;}
-#websites { margin-bottom: 50px;}
 #hour_count,
 #website_count {
     font-family: Arial, sans-serif;
@@ -149,7 +151,9 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
     display: inline-block;
 }
 #hour_count .sep { padding:0 5px;}
-#experience .about-subtitle { color: #999999; font-weight: 200; font-size: 22px; text-transform: none;}
+#experience { padding-bottom: 20px; margin-bottom: 30px;  border-bottom: 1px solid #eeeeee; overflow: hidden;}
+#experience .about-subtitle { color: #999999; font-weight: 200; line-height: 1.4; margin:7px 0 15px; font-size: 22px; text-transform: none;}
+#experience .about-subtitle small { display: block; line-height: 1; margin-top: 15px; }
 #websites .platforms { width: 85%; margin:0 auto;}
 #websites .platforms > div { width: 24.9%; float: left; }
 #websites .platforms .web-count { font-family: Arial, sans-serif; display: inline-block; background: #eee; padding:5px 10px; border-radius: 50px;}
@@ -219,7 +223,7 @@ a.comment-toggle { position: absolute; left:0; bottom:-30px; }
 }
 
 @media screen and (max-width:775px) {
-    #hours,#websites { float: none; width: auto;  border-bottom: 1px solid #eeeeee;}
+    #hours,#websites { float: none; width: auto; }
     #websites .platforms { width: auto;}
 }
 @media screen and (max-width:700px) {
@@ -251,11 +255,13 @@ a.comment-toggle { position: absolute; left:0; bottom:-30px; }
     #blog_feature h3 a { font-size: 30px;}
 }
 @media screen and (max-width:525px) {
+    header { padding-bottom: 5px;}
+    .nav-shown { padding-bottom: 15px; }
     header nav a { margin-left: 20px;}
     header nav { display: none; text-align: center; position: static; margin-top: 0px; margin: 15px 0 0; width: auto; clear: both; border-bottom: 1px solid #666; border-top: 1px solid #444;}
-    header nav.active { display: block;}
+    .nav-shown  nav { display: block;}
     header nav a { display: block; line-height: 50px; font-size: 24px; border-top: 1px solid #666; border-bottom: 1px solid #444; margin: 0 !important;}
-    header .mobile-menu { display: block; font-size: 25px; padding:5px 10px; line-height: 30px; margin: 40px -10px 10px 0; float: right;}
+    header .mobile-menu { display: block; font-size: 25px; padding:5px 10px; line-height: 30px; margin: 30px -10px 0 0; float: right;}
     header .mobile-menu i { margin-right: 5px;}
     header .mobile-menu:hover { text-decoration: none; }
 

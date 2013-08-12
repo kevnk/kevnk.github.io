@@ -6,7 +6,7 @@
     // Menu Link
     $('a.mobile-menu').on('click',function(e){
         e.preventDefault();
-        $('nav').add($(this)).toggleClass('active');
+        $('header').add($(this)).toggleClass('nav-shown');
         return false;
     });
 
