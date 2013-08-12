@@ -56,8 +56,8 @@ title: Meet Kevin Kirchner, View His Work, and Read His Blog
             </div>
             <div id="design">
                 <h5 class="about-subtitle">On Design</h5>
-                <blockquote class="thought">If you can't communicate effectively, you can't design effectively.</blockquote>
-                <p class="suggestion">Learning to understand others from their perspective is the core of communication and design.</p>
+                <blockquote class="thought">You can't design effectively if you can't communicate effectively.</blockquote>
+                <p class="suggestion">Learning to understand others from their perspective is at the core of communication and design.</p>
             </div>
 <!--
             <div id="dev">
@@ -189,7 +189,7 @@ title: Meet Kevin Kirchner, View His Work, and Read His Blog
     var hourOfDay = now.getHours();
 
     // if weekday between 9am-5pm, run it
-    if(dayOfWeek != 0 && dayOfWeek != 6 && hourOfDay > 9 && hourOfDay < 17) {
+    if(dayOfWeek != 0 && dayOfWeek != 6 && hourOfDay >= 9 && hourOfDay <= 17) {
         setInterval(runTime,1000);
     } else {
         $('#hour_count').find('span').hide().filter('#work_hours').show();
