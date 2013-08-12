@@ -90,7 +90,7 @@ header .logo a { font-size: 60px; font-weight: 200; color: #eee;}
 header .logo a:hover { text-decoration: none;}
 header nav { position: absolute; right:0; bottom:10px; line-height: 30px; width:400px; text-align: right; }
 header nav a,
-header .mobile-menu { display: inline-block; margin-left: 45px; font-size: 18px; color: #eee; font-weight: 400;}
+header .mobile-menu { display: inline-block; margin-left: 45px; font-size: 22px; color: #eee; font-weight: 400;}
 header nav a:hover { text-decoration: underline;}
 header .mobile-menu { display: none;}
 header .mobile-menu i { color: #eee;}
