@@ -115,8 +115,11 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 #welcome h2 strong { display: block; font-size: 48px; font-weight: 800;}
 #welcome p { margin-top: .5em;}
 
+#blog_feature { padding-bottom: 40px; border-bottom: 1px solid #eeeeee; margin-bottom: 80px; overflow: hidden;}
+#twitter h3 a,
 #blog_feature h3 a,
 #about h3 { display: block; font-size: 36px; color: #555; text-transform: none; font-weight: 200;}
+#twitter h3 a:hover,
 #blog_feature h3 a:hover { text-decoration: none;}
 #blog_feature .more-link { display: block; text-align: right; margin-top: 30px; margin-bottom: 20px;}
 #blog_feature .more-link i { margin-left: 5px;}
@@ -158,11 +161,14 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 #websites .platforms .web-count { font-family: Arial, sans-serif; display: inline-block; background: #eee; padding:5px 10px; border-radius: 50px;}
 #websites .platforms h6 { color: #999; font-weight: 400;}
 
+#twitter_widget { margin:30px auto; }
+#twitter_widget,
+#twitter_widget iframe { width: 540px;}
+
 /* BLOG LISTING PAGE */
 #blog .blog-posts a { font-size: 25px;}
 #blog .blog-posts .more-link { display: inline; font-size: .85em; padding-left: 10px;}
 #blog .more-link i { margin-left: 4px; }
-
 
 /* POSTS ============================== */
 main .post-title { margin-bottom: .25em;}
@@ -241,15 +247,20 @@ a.comment-toggle { position: absolute; left:0; bottom:-30px; }
     #welcome h2 { font-size: 36px;}
     #welcome h2 strong { font-size: 48px;}
     #welcome .left { float: none; width: inherit; }
-    
+
+    #twitter h3,
     #blog_feature h3,
     #about h3 { text-align: center;}
     #welcome .profile-pic { display: block; width: 80%; margin:0 auto; display: block; max-width: 350px; margin-bottom: 25px;}
 
     #lovehate .left,
     #lovehate .right { float: none; width: auto;}
+
+    #twitter_widget,
+    #twitter_widget iframe { width: 100%;}
 }
 @media screen and (max-width:550px) {
+    #twitter h3 a,
     #about h3,
     #blog_feature h3 a { font-size: 30px;}
 }
@@ -270,6 +281,7 @@ a.comment-toggle { position: absolute; left:0; bottom:-30px; }
     #welcome { font-size: 22px; }
     #welcome h2 { font-size: 30px;}
     #welcome h2 strong { font-size: 39px;}
+    #twitter h3 a,
     #about h3,
     #blog_feature h3 a { font-size: 26px;}
 }
