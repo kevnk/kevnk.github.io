@@ -154,6 +154,7 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 }
 #hour_count .sep { padding:0 5px;}
 #experience { padding-bottom: 20px; margin-bottom: 30px;  border-bottom: 1px solid #eeeeee; overflow: hidden;}
+.post #experience { padding: 0; margin: 0;border:0; }
 #experience .about-subtitle { color: #999999; font-weight: 200; line-height: 1.4; margin:7px 0 15px; font-size: 22px; text-transform: none;}
 #experience .about-subtitle small { display: block; line-height: 1; margin-top: 15px; }
 #websites .platforms { width: 85%; margin:0 auto;}
@@ -175,7 +176,7 @@ main .post-title { margin-bottom: .25em;}
 main .post-date { font-size: 15px; margin-bottom: 2em; }
 .post,
 .blog-excerpt { color: #777777; margin: 1em 0 2em; padding-bottom: 2em; border-bottom: 1px solid #eeeeee; font-size: 22px; font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;}
-a.comment-toggle { position: absolute; left:0; bottom:-30px; }
+a.comment-toggle { position: absolute; left:0; bottom:10px; }
 
 /* standard */
 .post pre {
