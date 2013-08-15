@@ -10,7 +10,7 @@
     <rights>Copyright (c) 2013 Kevin Kirchner</rights>
     {% for post in site.posts limi:20 %}
     <entry>
-        <title></title>
+        <title>{{ post.title }}</title>
         <link href="http://kevnk.com{{ post.url }}/"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <id>http://kevnk.com{{ post.url }}/</id>
