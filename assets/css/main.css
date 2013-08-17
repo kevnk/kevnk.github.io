@@ -79,7 +79,7 @@ a:hover i { text-decoration: none;}
 /* GLOBAL ========================================= */
 h1,h2,h3,h4,h5,h6 { color: #333; font-weight: 100; margin:0; line-height: 1.4; margin:.6em 0;}
 h3,h4,h5,h6 { font-weight: 700; color: #555; text-transform: uppercase;}
-main h1 { font-weight: 300; line-height: 1.5; border-bottom: 1px solid #eee; margin: .25em 0 .75em;}
+main h1 { font-weight: 100; line-height: 1.5; border-bottom: 1px solid #eee; margin: .25em 0 .75em;}
 h1 i, h2 i, h3 i, h4 i, h5 i, h6 i { color: #666;}
 
 /* HEADER =========================================== */
@@ -175,7 +175,8 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 main .post-title { margin-bottom: .25em;}
 main .post-date { font-size: 15px; margin-bottom: 2em; }
 .post,
-.blog-excerpt { color: #555; margin: 1em 0 2em; padding-bottom: 2em; border-bottom: 1px solid #eeeeee; font-size: 28px; line-height: 1.5; }
+.blog-excerpt { color: #555; margin: 1em 0 2em; padding-bottom: 2em; border-bottom: 1px solid #eeeeee; font-size: 28px; line-height: 1.6; }
+.blog-excerpt { font-size: 22px;}
 .post h1,
 .post h2,
 .post h3,
