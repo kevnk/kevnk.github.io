@@ -85,10 +85,10 @@ h1 i, h2 i, h3 i, h4 i, h5 i, h6 i { color: #666;}
 /* HEADER =========================================== */
 header { }
 header a { text-decoration: none; display: block; }
-header .logo { line-height: 80px; float: left;}
+header .logo { line-height: 1; float: left;}
 header .logo a { font-size: 60px; font-weight: 200; color: #eee;}
 header .logo a:hover { text-decoration: none;}
-header nav { position: absolute; right:0; bottom:10px; line-height: 30px; width:400px; text-align: right; }
+header nav { position: absolute; right:0; bottom:21px; line-height: 30px; width:400px; text-align: right; }
 header nav a,
 header .mobile-menu { display: inline-block; margin-left: 45px; font-size: 22px; color: #eee; font-weight: 400;}
 header nav a:hover { text-decoration: underline;}
@@ -289,7 +289,7 @@ a.comment-toggle { position: absolute; left:0; bottom:10px; }
     header nav { display: none; text-align: center; position: static; margin-top: 0px; margin: 15px 0 0; width: auto; clear: both; border-bottom: 1px solid #666; border-top: 1px solid #444;}
     .nav-shown  nav { display: block;}
     header nav a { display: block; line-height: 50px; font-size: 24px; border-top: 1px solid #666; border-bottom: 1px solid #444; margin: 0 !important;}
-    header .mobile-menu { display: block; font-size: 25px; padding:5px 10px; line-height: 30px; margin: 30px -10px 0 0; float: right;}
+    header .mobile-menu { display: block; font-size: 25px; padding:5px 10px; line-height: 30px; margin: 44px -10px 0 0; float: right;}
     header .mobile-menu i { margin-right: 5px;}
     header .mobile-menu:hover { text-decoration: none; }
 
