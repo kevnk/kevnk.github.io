@@ -19,7 +19,9 @@ Cesar Kuriyama decided to make [a video from one second of every day of his life
 
 We didn't get very far, but I wish we had because these memories become so precious later in life. I always hear older fathers say things like, "Don't work too much while you have a family. They grow up so fast. You don't want to miss it like I did."
 
-Then I realized, this is why I love facebook and instagram so much and likely why they're so successful—it's a bank full of your memories. You forget so much so quickly, but looking back on your timeline brings back so many things—and that feeling is so good. You're doing something that will go beyond your life—preserving memories for your friends and loved ones.
+And then you have a stories like this: a [widower submits a song about his wife of 73 years to a songwriting contest](http://twentytwowords.com/2013/08/26/widower-submits-a-song-about-his-wife-of-73-years-to-a-songwriting-contest/).
+
+I realized, this is why I love facebook and instagram so much and likely why they're so successful—it's a bank full of your memories. You forget so much so quickly, but looking back on your timeline brings back so many things—and that feeling is so good. You're doing something that will go beyond your life—preserving memories for your friends and loved ones.
 
 But will facebook (let alone the internet or the jpeg file) still be around in 50 years? Think about how far technology has progress since Martin Luther King's time, 50 years ago. 
 
