@@ -21,7 +21,7 @@ We didn't get very far, but I wish we had because these memories become so preci
 
 And then you have a stories like this: a [widower submits a song about his wife of 73 years to a songwriting contest](http://twentytwowords.com/2013/08/26/widower-submits-a-song-about-his-wife-of-73-years-to-a-songwriting-contest/).
 
-I realized, this is why I love facebook and instagram so much and likely why they're so successful—it's a bank full of your memories. You forget so much so quickly, but looking back on your timeline brings back so many things—and that feeling is so good. You're doing something that will go beyond your life—preserving memories for your friends and loved ones.
+I realized, this is why I love facebook and instagram so much and likely why they're so successful—it's a bank full of your memories. You forget so much so quickly, but these sites and apps give you the ability to bring back so many things—and that feeling is so good. You're doing something that will go beyond your life—preserving your memories.
 
 But will facebook (let alone the internet or the jpeg file) still be around in 50 years? Think about how far technology has progress since Martin Luther King's time, 50 years ago. 
 
