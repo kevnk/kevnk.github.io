@@ -175,7 +175,7 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 main .post-title { margin-bottom: .25em;}
 main .post-date { font-size: 15px; margin-bottom: 2em; }
 .post,
-.blog-excerpt { color: #555; margin: 1em 0 2em; padding-bottom: 2em; border-bottom: 1px solid #eeeeee; font-size: 28px; line-height: 1.6; }
+.blog-excerpt { color: #555; margin: 1em 0 2em; padding-bottom: 2em; border-bottom: 1px solid #eeeeee; font-size: 24px; line-height: 1.6; }
 .blog-excerpt { font-size: 22px;}
 .post h1,
 .post h2,
@@ -195,7 +195,9 @@ a.comment-toggle { position: absolute; left:0; bottom:10px; }
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
-  padding: 0 .4em;
+  padding: 0 .5em .1em;
+  overflow-x: auto;
+  border-radius: 4px;
 }
 
 .post ul, .post ol {
@@ -210,16 +212,19 @@ a.comment-toggle { position: absolute; left:0; bottom:10px; }
 
 .post pre code {
   border: none;
+  padding: 0;
 }
 
 /* terminal */
-.post pre.terminal {
+/*.post pre.terminal {*/
+.post pre {
   border: 1px solid #000;
   background-color: #333;
   color: #FFF;
 }
 
-.post pre.terminal code {
+/*.post pre.terminal code {*/
+.post pre code {
   background-color: #333;
 }
 
