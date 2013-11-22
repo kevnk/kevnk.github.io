@@ -2,6 +2,7 @@
 layout: post
 title: "Getting Jekyll to Work on OSX 10.9 Mavericks"
 date: 2013-11-21 21:20:00
+comments_disabled: false
 
 ---
 
