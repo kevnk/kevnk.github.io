@@ -173,11 +173,10 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 /* RESPONSIVE ========================== */
 @media screen and (max-width:900px) {
     .container { width: 88.88%;}
-    #welcome { font-size: 22px; }
+    #welcome { font-size: 22px; width: 580px;}
     #welcome h2 { font-size: 32px;}
     #welcome h2 strong { font-size: 40px;}
-    #welcome .left { width: 42.5%;}
-    #welcome .right { width: 50%;}
+    #welcome .left { width: 300px;}
     header nav { width: 460px; }
 }
 
@@ -185,6 +184,7 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
     #welcome { font-size: 18px; }
     #welcome h2 { font-size: 28px;}
     #welcome h2 strong { font-size: 36px;}
+    #welcome .left { padding-top: 20px;}
 }
 
 @media screen and (max-width:775px) {
@@ -200,7 +200,7 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 @media screen and (max-width:650px) {
     footer a { line-height: 40px;}
 
-    #welcome { margin-bottom: 20px;}
+    #welcome { margin-bottom: 20px; width: auto;}
     #welcome .left { text-align: center; padding-top: 10px; float: none;}
     #welcome .right { float: none; width: auto;}
     #welcome { font-size: 24px; }
