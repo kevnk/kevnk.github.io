@@ -172,7 +172,7 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 
 /* RESPONSIVE ========================== */
 
-/*
+
 @media screen and (max-width:900px) {
     .container { width: 88.88%;}
     #welcome { font-size: 22px; width: 580px;}
@@ -251,7 +251,7 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
     #about h3,
     #blog_feature h3 a { font-size: 26px;}
 }
-*/
+
 
 
 /* Retina-specific stuff here */
