@@ -1,0 +1,264 @@
+main { display: block;}
+.container { width: 800px; margin: 0 auto; text-align: left; position: relative;}
+
+/*
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway%20300.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway Thin';
+    src: url('../fonts/Raleway%20100.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway Medium';
+    src: url('../fonts/Raleway%20400.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway ExtraBold';
+    src: url('../fonts/Raleway%20700.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+*/
+html {
+    background: url('../images/tweed.png') 50% 0;
+    -webkit-box-shadow: 0 0px 30px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 0 0px 30px 0px rgba(0, 0, 0, 0.25) inset;
+    min-height:100%;
+}
+html,
+body {
+    font-family: 'Raleway';
+    font-weight: 400;
+    color: #777;
+    font-size: 18px;
+    line-height: 1.3;
+}
+p { margin: 0 0 1em;}
+a { color: #71a6d8; text-decoration: none;}
+a i { color: #a8cde1;}
+a:hover { text-decoration: underline;}
+a:hover i { text-decoration: none;}
+
+/* Utilities ============================= */
+.a-left { text-align: left;}
+.a-right { text-align: right;}
+.a-center { text-align: center;}
+.right { float: right;}
+.left { float: left;}
+.no-display { display: none;}
+.light-txt { color: #ccc;}
+.blue-txt { color: #71a6d8;}
+.light-blue-txt { color: #a8cde1;}
+
+.clearfix,
+.container {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after,
+.container:after {
+    clear: both;
+}
+
+/* GLOBAL ========================================= */
+h1,h2,h3,h4,h5,h6 { color: #333; font-weight: 100; margin:0; line-height: 1.4; margin:.6em 0;}
+h3,h4,h5,h6 { font-weight: 700; color: #555; text-transform: uppercase;}
+main h1 { font-weight: 100; font-size: 45px; border-bottom: 1px solid #eee; margin: .25em 0 .75em;}
+h1 i, h2 i, h3 i, h4 i, h5 i, h6 i { color: #666;}
+
+/* HEADER =========================================== */
+header { }
+header a { text-decoration: none; display: block; }
+header .logo { line-height: 1; float: left;}
+header .logo a { font-size: 60px; font-weight: 200; color: #eee;}
+header .logo a:hover { text-decoration: none;}
+header nav { position: absolute; right:0; bottom:21px; line-height: 30px; width:400px; text-align: right; }
+header nav a,
+header .mobile-menu { display: inline-block; margin-left: 45px; font-size: 22px; color: #eee; font-weight: 400;}
+header nav a:hover { text-decoration: underline;}
+header .mobile-menu { display: none;}
+header .mobile-menu i { color: #eee;}
+
+/* MAIN =========================================== */
+main { background:#fff; padding: 30px 0 40px;}
+
+/* FOOTER =========================================== */
+footer { padding:20px 0 50px; overflow: hidden;}
+footer a { display: block; text-decoration: none; color: #eee; line-height: 1.5;}
+footer a:hover span { text-decoration: underline;}
+footer a i { margin-right: 5px; color: #eeeeee;}
+footer a i.icon-linkedin-sign { margin-right: 2px;}
+
+/* HOME =============================== */
+.profile-pic { border-radius: 50%; }
+#welcome { font-size: 24px; color: #666; text-align: right; margin:20px auto 30px; overflow: hidden; width: 630px;}
+#welcome .left { width:340px; padding:0 0 0 0; }
+#welcome .right { width: 250px; }
+#welcome .right .profile-pic { width: 100%; }
+#welcome h2 { color: #666; font-size: 36px; font-weight: 400; line-height: 1.2;}
+#welcome h2 strong { display: block; font-size: 48px; font-weight: 800;}
+#welcome p { margin-top: .5em;}
+
+#blog_feature { padding-bottom: 40px; border-bottom: 1px solid #eeeeee; margin-bottom: 80px; overflow: hidden;}
+#twitter h3 a,
+#blog_feature h3 a,
+#about h3 { display: block; font-size: 36px; color: #555; text-transform: none; font-weight: 200;}
+#twitter h3 a:hover,
+#blog_feature h3 a:hover { text-decoration: none;}
+#blog_feature .more-link { display: block; text-align: right; margin-top: 30px; margin-bottom: 20px;}
+#blog_feature .more-link i { margin-left: 5px;}
+.blog-posts { color: #ccc; list-style: none; margin:0; padding: 0; font-size: 16px; }
+.blog-posts li { margin-bottom: 7px;}
+.blog-posts a { display: block; font-size: 20px; }
+
+.about-title { font-size: 25px; font-weight: 500; text-align: center;}
+#lovehate,
+#strengths { padding: 20px 0; margin: 20px 0 20px; border-bottom: 1px solid #eeeeee;  border-top: 1px solid #eeeeee;}
+#strengths { margin-bottom: 40px; }
+#lovehate li,
+#strengths li { list-style: none; position: relative;}
+#strengths li { margin-bottom: .5em; }
+#lovehate li:before { content:"- "; position: absolute; left:-13px;}
+#lovehate .left,
+#lovehate .right { width: 48%;}
+#perspectives { text-align: center; padding-bottom: 20px; margin-bottom: 30px;  border-bottom: 1px solid #eeeeee;}
+#perspectives .about-subtitle { font-size: 20px; position: relative; z-index: 2; margin: 40px 0 10px; line-height: 1.4; text-shadow: 0px 0px 5px #fff; filter: dropshadow(color=#fff, offx=0, offy=0);}
+#perspectives .thought { margin: 0; padding:1em; background: #f7f7f7; border-radius: 30px; font-weight: 500;}
+#perspectives .suggestion { font-weight: 400; font-size: 14px; color: #aaa; padding:1em 2em; }
+#life .about-subtitle { margin-top: 60px;}
+
+#hours,
+#websites { text-align: center; margin:15px 0; padding:25px 0; float: left; width: 50%;}
+#hour_count,
+#website_count {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px 40px;
+    color: #ffffff;
+    background: #bbb;
+    border-radius: 200px;
+    display: inline-block;
+}
+#hour_count .sep { padding:0 5px;}
+#experience { padding-bottom: 20px; margin-bottom: 30px;  border-bottom: 1px solid #eeeeee; overflow: hidden;}
+.post #experience { padding: 0; margin: 0;border:0; }
+#experience .about-subtitle { color: #999999; font-weight: 200; line-height: 1.4; margin:7px 0 15px; font-size: 22px; text-transform: none;}
+#experience .about-subtitle small { display: block; line-height: 1; margin-top: 15px; }
+#websites .platforms { width: 85%; margin:0 auto;}
+#websites .platforms > div { width: 24.9%; float: left; }
+#websites .platforms .web-count { font-family: Arial, sans-serif; display: inline-block; background: #eee; padding:5px 10px; border-radius: 50px;}
+#websites .platforms h6 { color: #999; font-weight: 400;}
+
+#education { padding-bottom: 20px; margin-bottom: 30px;  border-bottom: 1px solid #eeeeee; overflow: hidden;}
+#education .about-title small { text-transform: none; }
+
+/* RESPONSIVE ========================== */
+@media screen and (max-width:900px) {
+    .container { width: 88.88%;}
+    #welcome { font-size: 22px; }
+    #welcome h2 { font-size: 32px;}
+    #welcome h2 strong { font-size: 40px;}
+    #welcome .left { width: 42.5%;}
+    #welcome .right { width: 50%;}
+    header nav { width: 460px; }
+}
+
+@media screen and (max-width:850px) {
+    #welcome { font-size: 18px; }
+    #welcome h2 { font-size: 28px;}
+    #welcome h2 strong { font-size: 36px;}
+}
+
+@media screen and (max-width:775px) {
+    #hours,#websites { float: none; width: auto; }
+    #websites .platforms { width: auto;}
+}
+@media screen and (max-width:700px) {
+    #welcome { font-size: 16px; }
+    #welcome h2 { font-size: 24px;}
+    #welcome h2 strong { font-size: 32px;}
+}
+
+@media screen and (max-width:650px) {
+    footer a { line-height: 40px;}
+
+    #welcome { margin-bottom: 20px;}
+    #welcome .left { text-align: center; padding-top: 10px; float: none;}
+    #welcome .right { float: none; width: auto;}
+    #welcome { font-size: 24px; }
+    #welcome h2 { font-size: 36px;}
+    #welcome h2 strong { font-size: 48px;}
+    #welcome .left { float: none; width: inherit; }
+
+    #twitter h3,
+    #blog_feature h3,
+    #about h3 { text-align: center;}
+    #welcome .profile-pic { display: block; width: 80%; margin:0 auto; display: block; max-width: 350px; margin-bottom: 25px;}
+
+    #lovehate .left,
+    #lovehate .right { float: none; width: auto;}
+
+    #twitter_widget,
+    #twitter_widget iframe { width: 100%;}
+
+    main .post-title { font-size: 30px;}
+    .post,
+    .blog-excerpt { font-size: 22px;}
+}
+@media screen and (max-width:550px) {
+    #twitter h3 a,
+    #about h3,
+    #blog_feature h3 a { font-size: 30px;}
+}
+@media screen and (max-width:525px) {
+    header { padding-bottom: 5px;}
+    .nav-shown { padding-bottom: 15px; }
+    header nav a { margin-left: 20px;}
+    header nav { display: none; text-align: center; position: static; margin-top: 0px; margin: 15px 0 0; width: auto; clear: both; border-bottom: 1px solid #666; border-top: 1px solid #444;}
+    .nav-shown  nav { display: block;}
+    header nav a { display: block; line-height: 50px; font-size: 24px; border-top: 1px solid #666; border-bottom: 1px solid #444; margin: 0 !important;}
+    header .mobile-menu { display: block; font-size: 25px; padding:5px 10px; line-height: 30px; margin: 44px -10px 0 0; float: right;}
+    header .mobile-menu i { margin-right: 5px;}
+    header .mobile-menu:hover { text-decoration: none; }
+
+    footer .right { text-align: left; clear: both; float: none;}
+}
+@media screen and (max-width:450px) {
+    #welcome { font-size: 22px; }
+    #welcome h2 { font-size: 30px;}
+    #welcome h2 strong { font-size: 39px;}
+    #twitter h3 a,
+    #about h3,
+    #blog_feature h3 a { font-size: 26px;}
+}
+
+
+
+/* Retina-specific stuff here */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    html { background: url('../images/tweed_@2X.png') 50% 0; background-size:200px 200px;}
+}

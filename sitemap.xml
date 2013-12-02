@@ -11,9 +11,11 @@
     {% for page in site.pages %}
     {% if page.layout != nil %}
     {% if page.layout != 'feed' %}
+    {% if page.layout != 'resume' %}
     <url>
         <loc>http://kevnk.com{{ page.url | remove: 'index.html' }}</loc>
     </url>
+    {% endif %}
     {% endif %}
     {% endif %}
     {% endfor %}

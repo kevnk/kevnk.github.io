@@ -8,7 +8,7 @@
     <updated>{{ site.time | date_to_xmlschema }}</updated>
     <author><name>Kevin Kirchner</name></author>
     <rights>Copyright (c) 2013 Kevin Kirchner</rights>
-    {% for post in site.posts limi:20 %}
+    {% for post in site.posts limit:20 %}
     <entry>
         <title>{{ post.title | xml_escape}}</title>
         <link href="http://kevnk.com{{ post.url }}"/>
