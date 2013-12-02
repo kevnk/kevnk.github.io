@@ -8,11 +8,11 @@ html,body { font-size: 14px;}
 main { padding: 0 0 20px;}
 header .container,
 footer .container,
-main .container { width: 94%;}
+main .container { width: 90%;}
 header .logo a,
-header nav a { font-size: 20px; }
-header nav { margin:.6em 0; font-size: 2em; position: relative; float: right; bottom: 0;}
-header nav a { display: block; line-height: 1; font-weight: 100;}
+header .nav a { font-size: 14px; }
+header .nav { margin:.6em 0; font-size: 2em; position: relative; float: right; bottom: 0;}
+header .nav a { display: block; line-height: 1; }
 
 .about-title { margin-bottom: .3em;}
 
@@ -26,15 +26,15 @@ header nav a { display: block; line-height: 1; font-weight: 100;}
 #welcome .right { display: none;}
 
 #lovehate,
-#strengths { padding: 0 0 10px; margin-bottom: 15px;}
+#strengths { padding: 0 0 15px; margin-bottom: 20px;}
 #strengths { text-align: center;}
 #strengths ul { display: inline-block; margin: 0; padding: 0;}
 #strengths ul li { text-align: left;}
 
 #perspectives { padding-bottom: 10px; margin-bottom: 0px;}
-#perspectives .about-subtitle { margin: 0px; float: left; clear: both; text-align: left;}
-#perspectives .thought { float: right; width: 450px; text-align: left;}
-#perspectives .suggestion { float: left; padding: 0;}
+#perspectives .about-subtitle { margin: 10px 0px 0; float: left; clear: both; text-align: right; line-height: 1; width: 33%;}
+#perspectives .thought { float: right; text-align: left; width: 60%;}
+#perspectives .suggestion { float: left; padding: 0; clear: left; width: 33%; text-align: right;}
 #perspectives .clearfix { padding-bottom: 15px;}
 
 #hour_count, 
@@ -42,7 +42,7 @@ header nav a { display: block; line-height: 1; font-weight: 100;}
 #hours, 
 #websites { margin: 0; padding: 0;}
 
-#experience { margin-bottom: 0; page-break-before: always;}
+#experience { margin-bottom: 0; }
 #education { padding-bottom: 0; }
 
 footer { padding: 10px 0;}
