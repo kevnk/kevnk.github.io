@@ -14,6 +14,9 @@ header .nav a { font-size: 14px; }
 header .nav { margin:.6em 0; font-size: 2em; position: relative; float: right; bottom: 0;}
 header .nav a { display: block; line-height: 1; }
 
+header .logo a:after { content: ".com"; }
+/*header .logo a:before { content: "http://"; }*/
+
 .about-title { margin-bottom: .3em;}
 
 #welcome { width: auto; margin: 20px auto;}
