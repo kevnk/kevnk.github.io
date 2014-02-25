@@ -195,9 +195,11 @@ a.comment-toggle { position: absolute; left:0; bottom:10px; }
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
-  padding: 0 .5em .1em;
+  padding: 1em;
   overflow-x: auto;
   border-radius: 4px;
+  font-size: .7em;
+  line-height: 1em;
 }
 
 .post ul, .post ol {
@@ -227,6 +229,16 @@ a.comment-toggle { position: absolute; left:0; bottom:10px; }
 .post pre code {
   background-color: #333;
 }
+
+blockquote {
+    padding: 1em 1.5em 0;
+    margin: 1em 0;
+    background: #eee;
+    border-radius: 5px;
+    font-weight: 200;
+    overflow: hidden;
+}
+
 
 
 /* RESPONSIVE ========================== */
