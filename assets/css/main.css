@@ -50,6 +50,7 @@ a:hover i { text-decoration: none;}
 /* Utilities ============================= */
 .a-left { text-align: left;}
 .a-right { text-align: right;}
+.a-center { text-align: center;}
 .right { float: right;}
 .left { float: left;}
 .no-display { display: none;}
@@ -97,6 +98,8 @@ header .mobile-menu i { color: #eee;}
 
 /* MAIN =========================================== */
 main { background:#fff; padding: 30px 0 40px;}
+main .container img { max-width: 100%; }
+main .credit { font-size: .6em; opacity: .6; text-align: right; display: block; }
 
 /* FOOTER =========================================== */
 footer { padding:20px 0 50px; overflow: hidden;}
@@ -167,6 +170,8 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 #twitter_widget iframe { width: 540px;}
 
 /* BLOG LISTING PAGE */
+#blog .blog-posts .image-crop { overflow: hidden; min-height: 150px; margin-top: 1em; position: relative; }
+#blog .blog-posts .image-crop img { position: absolute; }
 #blog .blog-posts a { font-size: 30px; font-weight: 200;}
 #blog .blog-posts .more-link { display: inline; font-size: .85em; padding-left: 10px;}
 #blog .more-link i { margin-left: 4px; }

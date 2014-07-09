@@ -11,6 +11,11 @@ title: kevnk // Read Kevin Kirchner's Writings
         <li>
             <span>{{ post.date | date_to_string }}</span>
             <a href="{{ post.url }}">{{ post.title }}</a>
+            {% if post.img %}
+                <div class="image-crop" style="height: {{ post.list_img_height }}">
+                    <img src="/assets/images/posts/{{ post.img }}" style="top: {{ post.list_img_top }}" />
+                </div>
+            {% endif %}
             <p class="blog-excerpt">{{ post.content | strip_html | truncatewords: 35 }} <a class="more-link" href="{{ post.url }}">Read More<i class="icon-chevron-sign-right"></i></a></p>
         </li>
         {% endif %}
