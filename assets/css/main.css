@@ -170,7 +170,7 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 #twitter_widget iframe { width: 540px;}
 
 /* BLOG LISTING PAGE */
-#blog .blog-posts .image-crop { display: block; overflow: hidden; min-height: 150px; margin-top: 1em; position: relative; }
+#blog .blog-posts .image-crop { display: block; overflow: hidden; min-height: 150px; margin-top: .6em; position: relative; }
 #blog .blog-posts .image-crop img { position: absolute; }
 #blog .blog-posts a { font-size: 30px; font-weight: 200;}
 #blog .blog-posts .more-link { display: inline; font-size: .85em; padding-left: 10px;}
