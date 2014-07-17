@@ -1,5 +1,6 @@
 name: kevnk
 title: kevnk // Meet Kevin Kirchner, View His Work, and Read His Writings
+markdown: kramdown
 kramdown:
   input: GFM
   coderay:
