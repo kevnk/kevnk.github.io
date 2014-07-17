@@ -2,7 +2,10 @@
 layout: post
 title:  "The ONE Place To Get Everything You Want And Need"
 date:   2014-07-02 12:00:00
-
+img: family.jpg
+img_caption: "My boys and me"
+list_img_height: 300px
+list_img_top: -20px
 ---
 
 We access all this info in little viewing portlets called websites. Sometimes they're loosly connected with API's or the like, but you have all these separate pieces. It makes finding the perfect workflow very challenging because, either 1) the things that exist aren't the all-in-one package deal you're looking for, or 2) it's challenging to integrate with the other things that fill in the gaps

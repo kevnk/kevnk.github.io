@@ -2,13 +2,16 @@
 layout: default
 ---
 <h1 class="post-title">{{ page.title }}</h1>
-<div class="light-txt post-date">{{ page.date | date_to_string }}</div>
+<div class="light-txt post-date">{{ page.date | date: '%B %d, %Y' }}</div>
 <!-- <div class="tags"><i class="icon-tag"></i> {{ page.tags | array_to_sentence_string }}</div> -->
 <!-- http://brizzled.clapper.org/blog/2010/12/20/some-jekyll-hacks/ -->
 
 <div class="post">
 {% if page.img %}
     <img src="/assets/images/posts/{{ page.img }}" />
+    {% if page.img_caption %}
+    <span class="caption">{{ page.img_caption }}</span>
+    {% endif %}
     {% if page.img_credit %}
     <span class="credit">Photo credit {% if page.img_url %}<a href="{{ page.img_url }}" target="_blank">{% endif %}{{ page.img_credit }}{% if page.img_url %}</a>{% endif %}</span>
     {% endif %}

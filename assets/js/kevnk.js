@@ -18,4 +18,7 @@
         return false;
     });
 
+    // Highlight code
+    hljs.initHighlightingOnLoad();
+
 })(jQuery, this, document)
