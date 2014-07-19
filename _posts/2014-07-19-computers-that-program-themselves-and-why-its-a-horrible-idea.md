@@ -79,7 +79,7 @@ Relationships take time and effort. You'll experience pains working with people;
 
 We've _got_ to count the cost. Most of us don't know what we're missing—deep intimate relationships.
 
-But what if you don't know how to develop deep intimate relationships? Well, I guess you could ask Google... but I bet there's a person you could ask who you've seen has real relationship experience (tip: they may or may not be your Facebook friend).
+But what if you don't know how to develop deep intimate relationships? Well, I guess you could ask Google... but I bet there's a person you could ask who you've seen has real relationship experience (tip: they may or may not be your Facebook friend—maybe you could message them for their address and write them a letter).
 
 
 [1]: https://twitter.com/worrydream
