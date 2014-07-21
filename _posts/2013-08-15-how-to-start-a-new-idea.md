@@ -116,6 +116,6 @@ Anything above 50 is likely a worthy pursuit. It has a higher rating of completi
 
 ## Now what?
 
-[Subscribe to my "Idea People ROCK!" mailing list](http://eepurl.com/DM9BD) to get more info on helping you better pursue your amazing ideas.
+[Subscribe to my mailing list](http://eepurl.com/ZqIeT) to get more info on helping you better pursue your amazing ideas.
 
 You can also follow me, [@kevinkirchner](http://twitter.com/kevinkirchner) on twitter to learn more about what to do when you have an idea worth pursuing.
