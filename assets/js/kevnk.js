@@ -49,7 +49,7 @@
         });
     }
 
-    $(window).on('resize', maintainImageTopAspect)
-    $(window).trigger('resize');
+    $(window).on('resize', maintainImageTopAspect);
+    maintainImageTopAspect();
 
 })(jQuery, this, document)
