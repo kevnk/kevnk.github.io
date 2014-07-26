@@ -14,7 +14,7 @@ title: kevnk // Read Kevin Kirchner's Writings
             {{ post.title }}
             {% if post.img %}
                 <span class="image-crop" style="height: {{ post.list_img_height }}">
-                    <img src="/assets/images/posts/{{ post.img }}" style="top: {{ post.list_img_top }}" />
+                    <img data-frz-src="/assets/images/posts/{{ post.img }}" style="top: {{ post.list_img_top }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" onerror="lzld(this)"/>
                 </span>
             {% endif %}
             </a>
