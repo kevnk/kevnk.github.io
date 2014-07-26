@@ -49,6 +49,11 @@
         });
     }
 
+    var imgTimeout = 0;
+    $(window).on('scroll', function(){
+        clearTimeout(imgTimeout);
+        imgTimeout = setTimeout(maintainImageTopAspect, 100);
+    });
     $(window).on('resize', maintainImageTopAspect);
     imagesLoaded('#blog ul.blog-posts img', maintainImageTopAspect);
 
