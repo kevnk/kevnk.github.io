@@ -50,6 +50,6 @@
     }
 
     $(window).on('resize', maintainImageTopAspect);
-    maintainImageTopAspect();
+    imagesLoaded('#blog ul.blog-posts img', maintainImageTopAspect);
 
 })(jQuery, this, document)

@@ -172,8 +172,26 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 #twitter_widget iframe { width: 540px;}
 
 /* BLOG LISTING PAGE */
-#blog .blog-posts .image-crop { display: block; overflow: hidden; min-height: 150px; margin-top: .6em; position: relative; }
-#blog .blog-posts .image-crop img { position: absolute; }
+#blog .blog-posts .image-crop { 
+    display: block;
+    overflow: hidden;
+    min-height: 150px;
+    margin-top: .6em;
+    position: relative;
+    -webkit-transition: all .75s ease-out;
+    -moz-transition: all .75s ease-out;
+    -ms-transition: all .75s ease-out;
+    -o-transition: all .75s ease-out;
+    transition: all .75s ease-out;
+}
+#blog .blog-posts .image-crop img { 
+    position: absolute; 
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
 #blog .blog-posts a { font-size: 30px; font-weight: 200;}
 #blog .blog-posts .more-link { display: inline; font-size: .85em; padding-left: 10px;}
 #blog .more-link i { margin-left: 4px; }
