@@ -4,6 +4,11 @@ title:  "Remember & Commit: The Christian Lifestyle Summed Up"
 date:   2014-07-26 12:00:00
 category: spiritual
 tags: lifestyle, christian, memory
+img: remember.jpg
+img_credit: Flood G.
+img_url: https://www.flickr.com/photos/_flood_/
+list_img_height: 250px
+list_img_top: -255px
 ---
 
 > If only we could remember who God is; then we could more easily commit to following Him with all our heart, soul, mind, and strength.
