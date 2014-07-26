@@ -1,7 +1,12 @@
 ---
 layout: post
 title:  "Remember & Commit: The Christian Lifestyle Summed Up"
+date:   2014-07-26 12:00:00
+category: spiritual
+tags: lifestyle, christian, memory
 ---
+
+> If only we could remember who God is; then we could more easily commit to following Him with all our heart, soul, mind, and strength.
 
 The Bible is so powerful. Its words can literally change your life in an instant. Why are these words so powerful?
 
@@ -52,8 +57,10 @@ How can we start remembering God's Truths? I'm sure you're already familiar with
 - Memorizing Scripture — e.g. [ScriptureTyper](http://scripturetyper.com/)
 
 
-## But Discipline is No Fun
+## Discipline Seems Like No Fun
 
-Here I list all these resources, but which of them do I myself use? Few, and they are (too) far between to remember as much of God's Truth as I want.
+Above I listed all these resources, but which of them do I myself use? I use too few.
 
-I'm actively doing some research into how to easily and enjoyably learn to remember and recall God's Truths more often. If you're interested in what I find, then [subscribe to my email list](http://eepurl.com/ZqIeT) and I'll email you when I have a new blog post (usually once a week or less).
+I _want_ to remember God's Truths. So I'm going to find ways to strengthen my memory. I've already done a little research and I'm pretty excited to share with you the things I've found (some stuff that's way more fun the just reading over and over)!
+
+If you're interested in what I find, then [subscribe to my email list](http://eepurl.com/ZqIeT) and I'll email you when I have a new blog post (usually once a week or less).
