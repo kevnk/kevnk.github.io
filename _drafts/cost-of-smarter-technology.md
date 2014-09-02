@@ -1,11 +1,6 @@
 ---
 layout: post
 title:  "The Cost of Smarter Technology"
-img: computers.jpg
-img_credit: Marie Mosley
-img_url: https://www.flickr.com/photos/mariemosley/
-list_img_height: 300px
-list_img_top: -50px
 ---
 
 Especially since the creation of the internet, we've all experienced the benefits of having better, faster access to the vastness of knowledge, but at what expense?

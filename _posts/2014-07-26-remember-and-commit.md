@@ -46,7 +46,7 @@ _If only_ we could remember and recall these Truths. _If only_ they were written
 
 > If we only _remembered_ God's Truths, then it wouldn't be hard to commit our life to Christ.
 
-Commitment comes easy when you know the Truth. So remembering, is the real key to living a Christian lifestyle.
+Commitment comes easily when you know the Truth—so _remembering_, is the real key to living a Christian lifestyle.
 
 ## Start Remembering
 
