@@ -7,8 +7,8 @@ tags: ios8, iphone, family sharing
 img: location-share.jpg
 img_credit: JT Rising the sun
 img_url: https://secure.flickr.com/photos/123585153@N04/
-list_img_height: 250px
-list_img_top: -255px
+list_img_height: 270px
+list_img_top: -175px
 ---
 
 Sharing your location with anyone is really simple:
