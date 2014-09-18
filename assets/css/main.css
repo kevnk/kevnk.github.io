@@ -172,7 +172,7 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 #twitter_widget iframe { width: 540px;}
 
 /* BLOG LISTING PAGE */
-#blog .blog-posts .image-crop { 
+#blog .blog-posts .image-crop {
     display: block;
     overflow: hidden;
     min-height: 150px;
@@ -184,8 +184,8 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
     -o-transition: all .75s ease-out;
     transition: all .75s ease-out;
 }
-#blog .blog-posts .image-crop img { 
-    position: absolute; 
+#blog .blog-posts .image-crop img {
+    position: absolute;
     -webkit-transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
     -ms-transition: all .5s ease-out;
@@ -264,7 +264,12 @@ blockquote {
     overflow: hidden;
 }
 
-
+.post p img {
+    padding: 20px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
 
 /* RESPONSIVE ========================== */
 @media screen and (max-width:900px) {
