@@ -76,7 +76,7 @@ $ homestead edit
 ```
 
 1. Set `sites: map:` to `myproject.app`
-1. Set `folders: to:` to `/home/vagrant/path/to/myproject/public`
+1. Set `sites: to:` to `/home/vagrant/path/to/myproject/public`
 3. Copy the `ip:` up top on this file for the next step
 
 ### 2. Add Project Url To Hosts File
