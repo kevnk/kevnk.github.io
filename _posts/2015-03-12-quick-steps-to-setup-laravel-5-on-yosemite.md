@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Quick Steps to Setup Laravel 5 on Yosemite"
+title:  "Quick Steps to Setup Laravel 5.0 on Yosemite"
 date:   2015-03-12 12:00:00
 category: code
 tags: php, laravel
@@ -10,7 +10,7 @@ list_img_top: -40px
 comments_disabled: false
 ---
 
-# First-time Laravel 5 Setup
+# First-time Laravel 5.0 Setup
 
 _If you want a video to get you through most of these steps, [watch the Laracast](https://laracasts.com/lessons/say-hello-to-laravel-homestead-two)._
 
@@ -65,7 +65,7 @@ $ homestead edit
 
 __NOTE:__ these two folders will automatically always be in sync.
 
-# Setup A New Laravel 5 Project
+# Setup A New Laravel 5.0 Project
 
 ## Server Setup
 
@@ -104,7 +104,7 @@ $ homestead edit
 ```
 
 1. Add to `databases:` your project's database: `- myproject`
-3. Copy the `ip:` up top on this file for the Sequal Pro step
+3. Copy the `ip:` up top on this file for the Sequel Pro step
 
 
 ### 2. Configure Database Credentials
@@ -118,9 +118,9 @@ DB_USERNAME=homestead
 DB_PASSWORD=secret
 ```
 
-### 3. Access Database Via Sequal Pro
+### 3. Access Database Via Sequel Pro
 
-Open Sequal Pro and setup a new connection, replacing `YOUR_IP` with the IP you copied from step 1:
+Open Sequel Pro and setup a new connection, replacing `YOUR_IP` with the IP you copied from step 1:
 
 ```
 Name: My Project
@@ -139,7 +139,7 @@ $ mysql -uhomestead -p
 mysql> show databases;
 ```
 
-## Laravel 5 Project Migration and Seeding
+## Laravel 5.0 Project Migration and Seeding
 
 ### 1. Add UserTableSeeder
 
