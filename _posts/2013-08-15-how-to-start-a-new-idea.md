@@ -28,7 +28,7 @@ Asking help from above is a great first filter because it gets rid of all the wo
 The remaining seven letters each stand for a specific word or phrase to help you rate your idea.
 
 ##### INSTRUCTIONS:
- Rate the following 1 (very little) to 10 (very much). Add them up, and you have your idea rating out of 70. *Then, I'll show [what your score means](#whats_your_score).*
+ Rate the following 1 (very little) to 10 (very much). Add them up, and you have your idea rating out of 70. *Then, I'll show [what your score means](#whats-your-score).*
 
 ### P.assion
 
