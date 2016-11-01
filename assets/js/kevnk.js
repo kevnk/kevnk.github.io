@@ -1,4 +1,6 @@
 (function($, window, document, undefined){
+    console.log("%c Looking for a quality developer?", 'color:#F80', "Here's my resume: http://www.kevnk.com/resume")
+
     $('a[rel="external"]').on('click',function(){
         $(this).attr('target','_blank');
     })
