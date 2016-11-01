@@ -19,7 +19,7 @@
     });
 
     // Highlight code
-    hljs.initHighlightingOnLoad();
+    if (hljs) hljs.initHighlightingOnLoad();
 
     // Maintain blog list image top
     var fullPageWidth = 800;
