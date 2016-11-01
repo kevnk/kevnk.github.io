@@ -36,13 +36,15 @@ header .logo a:after { content: ".com"; }
 
 #perspectives { padding-bottom: 10px; margin-bottom: 0px;}
 #perspectives .about-subtitle { margin: 10px 0px 0; float: left; clear: both; text-align: right; line-height: 1; width: 33%;}
+#perspectives .about-subtitle small,
+#perspectives .about-subtitle a { font-size: 12px; line-height: 18px; }
 #perspectives .thought { float: right; text-align: left; width: 60%;}
 #perspectives .suggestion { float: left; padding: 0; clear: left; width: 33%; text-align: right;}
 #perspectives .clearfix { padding-bottom: 15px;}
 
-#hour_count, 
+#hour_count,
 #website_count { font-size: 25px; padding: 10px 20px;}
-#hours, 
+#hours,
 #websites { margin: 0; padding: 0;}
 
 #experience { margin-bottom: 0; }

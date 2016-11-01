@@ -141,6 +141,7 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 #lovehate .right { width: 48%;}
 #perspectives { text-align: center; padding-bottom: 20px; margin-bottom: 30px;  border-bottom: 1px solid #eeeeee;}
 #perspectives .about-subtitle { font-size: 20px; position: relative; z-index: 2; margin: 40px 0 10px; line-height: 1.4; text-shadow: 0px 0px 5px #fff; filter: dropshadow(color=#fff, offx=0, offy=0);}
+#perspectives .about-subtitle a { text-transform: none; font-weight: 400; display: block; font-size: 0.8em; }
 #perspectives .thought { margin: 0; padding:1em; background: #f7f7f7; border-radius: 30px; font-weight: 500;}
 #perspectives .suggestion { font-weight: 400; font-size: 14px; color: #aaa; padding:1em 2em; }
 #life .about-subtitle { margin-top: 60px;}
@@ -163,6 +164,7 @@ footer a i.icon-linkedin-sign { margin-right: 2px;}
 .post #experience { padding: 0; margin: 0;border:0; }
 #experience .about-subtitle { color: #999999; font-weight: 200; line-height: 1.4; margin:7px 0 15px; font-size: 22px; text-transform: none;}
 #experience .about-subtitle small { display: block; line-height: 1; margin-top: 15px; }
+#experience .about-subtitle small a { text-transform: none; }
 #websites .platforms { width: 85%; margin:0 auto;}
 #websites .platforms > div { width: 24.9%; float: left; }
 #websites .platforms .web-count { font-family: Arial, sans-serif; display: inline-block; background: #eee; padding:5px 10px; border-radius: 50px;}

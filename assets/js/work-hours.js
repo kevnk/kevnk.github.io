@@ -28,7 +28,7 @@
     }
     // Initial Hours and Date
     var initHours = 10180;
-    var isCurrentlyEmployed = true;
+    var isCurrentlyEmployed = false;
     var initDate = new Date(2013,11,30);
     var now = new Date();
     var daysSince = daydiff(initDate, now) * 5/7;
