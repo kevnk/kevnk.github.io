@@ -19,7 +19,7 @@
     });
 
     // Highlight code
-    if (hljs) hljs.initHighlightingOnLoad();
+    try { hljs.initHighlightingOnLoad(); } catch(e) {}
 
     // Maintain blog list image top
     var fullPageWidth = 800;
@@ -55,6 +55,6 @@
         imgTimeout = setTimeout(maintainImageTopAspect, 100);
     });
     $(window).on('resize', maintainImageTopAspect);
-    imagesLoaded('#blog ul.blog-posts img', maintainImageTopAspect);
+    try { imagesLoaded('#blog ul.blog-posts img', maintainImageTopAspect); } catch(e) {}
 
 })(jQuery, this, document)
