@@ -28,7 +28,7 @@
     }
     // Initial Hours and Date
     var initHours = 10180;
-    var isCurrentlyEmployed = false;
+    var isCurrentlyEmployed = true;
     var initDate = new Date(2013,11,30);
     var now = new Date();
     var daysSince = daydiff(initDate, now) * 5/7;
@@ -47,4 +47,8 @@
         setInterval(runTime,1000);
     } else {
         $('#hour_count').find('span').hide().filter('#work_hours').show();
+    }
+
+    if (!isCurrentlyEmployed) {
+        console.log("%c Looking for a quality developer?", 'color:#F80', "Consider taking a look at my resume: http://www.kevnk.com/resume")
     }
