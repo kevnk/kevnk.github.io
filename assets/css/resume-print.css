@@ -1,53 +1,150 @@
-@page { size:8.5in 11in; margin: .5cm 0 0; }
-@page :first { margin-top: 0;}
-html {
-    -webkit-box-shadow: 0 0 0 0;
-    box-shadow: 0 0 0 0;
+@page {
+  size: 8.5in 11in;
+  margin: 0.5cm 0 0;
 }
-html,body { font-size: 14px;}
-main { padding: 0 0 20px;}
+@page :first {
+  margin-top: 0;
+}
+html {
+  -webkit-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+}
+html,
+body {
+  font-size: 14px;
+}
+main {
+  padding: 0 0 20px;
+}
 header .container,
 footer .container,
-main .container { width: 90%;}
+main .container {
+  width: 90%;
+}
 header .logo a,
-header .nav a { font-size: 14px; }
-header .nav { margin:.6em 0; font-size: 2em; position: relative; float: right; bottom: 0;}
-header .nav a { display: block; line-height: 1; }
+header .nav a {
+  font-size: 14px;
+}
+header .nav {
+  margin: 0.6em 0;
+  font-size: 2em;
+  position: relative;
+  float: right;
+  bottom: 0;
+}
+header .nav a {
+  display: block;
+  line-height: 1;
+}
 
-header .logo a:after { content: ".com"; }
+header .logo a:after {
+  content: '.com';
+}
 /*header .logo a:before { content: "http://"; }*/
 
-.about-title { margin-bottom: .3em;}
+.about-title {
+  margin-bottom: 0.3em;
+}
 
-#welcome { width: auto; margin: 20px auto;}
-#welcome .left { text-align: center; float: none; width: auto; }
-#welcome .left h2 { margin: 0; }
+#welcome {
+  width: auto;
+  margin: 20px auto;
+}
+#welcome .left {
+  text-align: center;
+  float: none;
+  width: auto;
+}
+#welcome .left h2 {
+  margin: 0;
+}
 #welcome .left h2,
-#welcome .left h2 strong { font-size: 30px;}
-#welcome .left h2 strong { display: inline-block;}
-#welcome .left p { font-size: 18px; margin-bottom: 0;}
-#welcome .right { display: none;}
+#welcome .left h2 strong {
+  font-size: 30px;
+}
+#welcome .left h2 strong {
+  display: inline-block;
+}
+#welcome .left p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+#welcome .right {
+  display: none;
+}
 
 #lovehate,
-#strengths { padding: 0 0 15px; margin-bottom: 20px;}
-#strengths { text-align: center;}
-#strengths ul { display: inline-block; margin: 0; padding: 0;}
-#strengths ul li { text-align: left;}
+#strengths {
+  padding: 0 0 15px;
+  margin-bottom: 20px;
+}
+#strengths {
+  text-align: center;
+}
+#strengths ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+#strengths ul li {
+  text-align: left;
+}
 
-#perspectives { padding-bottom: 10px; margin-bottom: 0px;}
-#perspectives .about-subtitle { margin: 10px 0px 0; float: left; clear: both; text-align: right; line-height: 1; width: 33%;}
+#perspectives {
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+#perspectives .about-subtitle {
+  margin: 10px 0px 0;
+  float: left;
+  clear: both;
+  text-align: right;
+  line-height: 1;
+  width: 33%;
+}
 #perspectives .about-subtitle small,
-#perspectives .about-subtitle a { font-size: 12px; line-height: 18px; }
-#perspectives .thought { float: right; text-align: left; width: 60%;}
-#perspectives .suggestion { float: left; padding: 0; clear: left; width: 33%; text-align: right;}
-#perspectives .clearfix { padding-bottom: 15px;}
+#perspectives .about-subtitle a {
+  font-size: 12px;
+  line-height: 18px;
+}
+#perspectives .thought {
+  float: right;
+  text-align: left;
+  width: 60%;
+}
+#perspectives .suggestion {
+  float: left;
+  padding: 0;
+  clear: left;
+  width: 33%;
+  text-align: right;
+}
+#perspectives .clearfix {
+  padding-bottom: 15px;
+}
 
 #hour_count,
-#website_count { font-size: 25px; padding: 10px 20px;}
+#website_count {
+  font-size: 25px;
+  padding: 10px 20px;
+}
 #hours,
-#websites { margin: 0; padding: 0;}
+#websites {
+  margin: 0;
+  padding: 0;
+}
 
-#experience { margin-bottom: 0; }
-#education { padding-bottom: 0; }
+#experience {
+  margin-bottom: 0;
+}
+#education {
+  padding-bottom: 0;
+}
 
-footer { padding: 10px 0;}
+#work > div {
+  page-break-inside: avoid;
+}
+
+footer {
+  padding: 10px 0;
+}
