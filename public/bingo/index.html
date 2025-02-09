@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Super Bowl Bingo</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Basic page and grid styles */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f0f0f0;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .bingo-board {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+    /* Each cell is a square with three sections: an icon, a small label, and a larger event text.
+       Centering the text helps multi‑word plays like "4TH DOWN CONVERSION" wrap nicely. */
+    .cell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      aspect-ratio: 1;
+      border: 4px solid;
+      background: white;
+      padding: 10px;
+    }
+    /* Icon styling – these make the visuals large and clear for kids. */
+    .cell .icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.3em;
+    }
+    /* Label (team name) styling */
+    .cell .label {
+      font-size: 1rem;
+      margin-bottom: 0.3em;
+    }
+    /* Event (play) styling; base size is roughly 1.618 times the label size */
+    .cell .event {
+      font-size: 1.618rem;
+    }
+    /* Extra emphasis for TOUCH DOWN and FIELD GOAL */
+    .cell.touchdown .event {
+      font-size: 2rem;
+    }
+    .cell.fieldgoal .event {
+      font-size: 1.8rem;
+    }
+    /* On‑screen color styling */
+    .cell.chiefs {
+      background: #D50000;      /* Bold red */
+      color: #FFEA00;           /* Bright yellow text */
+      border-color: #FFEA00;
+    }
+    .cell.eagles {
+      background: #000000;      /* Black */
+      color: #008000;           /* Green text */
+      border-color: #008000;
+    }
+    /* Free (center) square uses inverted colors */
+    .cell.free.chiefs-inverted {
+      background: #FFEA00;  /* Inverted: yellow */
+      color: #D50000;       /* Inverted: red */
+      border: 4px dashed #D50000;
+    }
+    .cell.free.eagles-inverted {
+      background: #008000;  /* Inverted: green */
+      color: #000000;       /* Inverted: black */
+      border: 4px dashed #000000;
+    }
+    /* Print-friendly overrides – we preserve background colors (so Chiefs stay red)
+       but adjust text (and border) colors for legibility. */
+    @media print {
+      body { margin: 0; }
+      .bingo-board { gap: 5px; }
+      .cell { padding: 5px; }
+      
+      /* For Chiefs cells: keep the red background but change text & border to white */
+      .cell.chiefs {
+        background: #D50000 !important;
+        color: white !important;
+        border-color: #D50000 !important;
+      }
+      /* For Eagles cells: keep black background and change text to white */
+      .cell.eagles {
+        background: #000000 !important;
+        color: white !important;
+        border-color: #000000 !important;
+      }
+      /* For free cells, adjust similarly */
+      .cell.free.chiefs-inverted {
+        background: #D50000 !important;
+        color: white !important;
+        border: 4px dashed #D50000 !important;
+      }
+      .cell.free.eagles-inverted {
+        background: #000000 !important;
+        color: white !important;
+        border: 4px dashed #000000 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Super Bowl Bingo</h1>
+  <div class="bingo-board" id="bingoBoard"></div>
+
+  <script>
+    (function(){
+      // Define weighted event types with icons for a kid-friendly version.
+      // TOUCH DOWN and FIELD GOAL now have weight 3, while the rest have weight 1.
+      const eventTypes = [
+        { text: "TOUCH DOWN", weight: 3, icon: "🏈" },
+        { text: "FIELD GOAL", weight: 3, icon: "🙌" },
+        { text: "FUMBLE", weight: 1, icon: "🤕" },
+        { text: "INTERCEPT", weight: 1, icon: "🛡️" },
+        { text: "QB SACK", weight: 1, icon: "💥" },
+        { text: "4TH DOWN CONVERSION", weight: 1, icon: "4️⃣" },
+        { text: "PENALTY", weight: 1, icon: "🚩" }
+      ];
+
+      // Helper: weighted random selection.
+      function weightedRandomSelect(items) {
+        const totalWeight = items.reduce((sum, item) => sum + item.weight, 0);
+        let rand = Math.random() * totalWeight;
+        for (let i = 0; i < items.length; i++) {
+          if (rand < items[i].weight) {
+            return items[i];
+          }
+          rand -= items[i].weight;
+        }
+      }
+
+      // getEffectiveTeam returns the team that benefits from the play.
+      // For FUMBLE or PENALTY, the effective team is the opposite of the original team.
+      function getEffectiveTeam(originalTeam, eventText) {
+        if (eventText === "FUMBLE" || eventText === "PENALTY") {
+          return originalTeam === "Chiefs" ? "Eagles" : "Chiefs";
+        }
+        return originalTeam;
+      }
+
+      // Prepare to build the 24 non‑free cells.
+      const cells = [];
+
+      // Variables to track football game score.
+      let footballScoreChiefs = 0;
+      let footballScoreEagles = 0;
+
+      // Build the 24 non‑free cells.
+      for (let i = 0; i < 24; i++) {
+        let cell = document.createElement("div");
+        cell.classList.add("cell");
+
+        // Randomly select the original team.
+        const originalTeam = Math.random() < 0.5 ? "Chiefs" : "Eagles";
+        // Select an event from the weighted list.
+        const event = weightedRandomSelect(eventTypes);
+        // Determine the effective team (for styling and scoring).
+        const effectiveTeam = getEffectiveTeam(originalTeam, event.text);
+
+        // If the event scores points, add to the football game score.
+        if (event.text === "TOUCH DOWN") {
+          if (effectiveTeam === "Chiefs") {
+            footballScoreChiefs += 7;
+          } else {
+            footballScoreEagles += 7;
+          }
+          cell.classList.add("touchdown");
+        } else if (event.text === "FIELD GOAL") {
+          if (effectiveTeam === "Chiefs") {
+            footballScoreChiefs += 3;
+          } else {
+            footballScoreEagles += 3;
+          }
+          cell.classList.add("fieldgoal");
+        }
+
+        // Apply styling based on the effective team.
+        cell.classList.add(effectiveTeam.toLowerCase());
+
+        // Create the icon element for the event.
+        const iconDiv = document.createElement("div");
+        iconDiv.classList.add("icon");
+        iconDiv.textContent = event.icon;
+
+        // Create the label element (shows the ORIGINAL team).
+        const labelDiv = document.createElement("div");
+        labelDiv.classList.add("label");
+        labelDiv.textContent = originalTeam.toUpperCase();
+
+        // Create the event element.
+        const eventDiv = document.createElement("div");
+        eventDiv.classList.add("event");
+        eventDiv.textContent = event.text;
+
+        // Append the icon, label, and event text to the cell.
+        cell.appendChild(iconDiv);
+        cell.appendChild(labelDiv);
+        cell.appendChild(eventDiv);
+
+        cells.push(cell);
+      }
+
+      // Decide the free (center) square outcome based on the count of scoring events.
+      // (Note: the free square is used only for a visual “win” and does not add points.)
+      let freeTeam, freeClass;
+      if (footballScoreChiefs > footballScoreEagles) {
+        freeTeam = "Chiefs";
+        freeClass = "chiefs-inverted";
+      } else if (footballScoreEagles > footballScoreChiefs) {
+        freeTeam = "Eagles";
+        freeClass = "eagles-inverted";
+      } else {
+        // In case of a tie, choose randomly.
+        if (Math.random() < 0.5) {
+          freeTeam = "Chiefs";
+          freeClass = "chiefs-inverted";
+        } else {
+          freeTeam = "Eagles";
+          freeClass = "eagles-inverted";
+        }
+      }
+
+      // Create the free (center) cell.
+      let freeCell = document.createElement("div");
+      freeCell.classList.add("cell", "free", freeClass);
+
+      // Add a trophy icon for the free cell.
+      const freeIcon = document.createElement("div");
+      freeIcon.classList.add("icon");
+      freeIcon.textContent = "🏆";
+
+      const freeLabel = document.createElement("div");
+      freeLabel.classList.add("label");
+      freeLabel.textContent = freeTeam.toUpperCase();
+
+      const freeEvent = document.createElement("div");
+      freeEvent.classList.add("event");
+      freeEvent.textContent = "WIN";
+
+      freeCell.appendChild(freeIcon);
+      freeCell.appendChild(freeLabel);
+      freeCell.appendChild(freeEvent);
+
+      // Insert the free cell at the center (index 12) of the 25-cell grid.
+      cells.splice(12, 0, freeCell);
+
+      // Append all cells to the board.
+      const board = document.getElementById("bingoBoard");
+      cells.forEach(cell => board.appendChild(cell));
+
+      // Create and display the football game score below the board.
+      const scoreDisplay = document.createElement("div");
+      scoreDisplay.style.textAlign = "center";
+      scoreDisplay.style.marginTop = "20px";
+      scoreDisplay.style.fontSize = "1.5rem";
+      scoreDisplay.textContent = `CHIEFS ${footballScoreChiefs} - EAGLES ${footballScoreEagles}`;
+      document.body.appendChild(scoreDisplay);
+    })();
+  </script>
+</body>
+</html>
