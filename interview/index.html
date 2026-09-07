@@ -1,0 +1,184 @@
+---
+layout: default
+title: Interview Kevin's Work
+---
+<!-- Kevin: set INTERVIEW_PASSWORD -->
+<meta name="robots" content="noindex">
+
+<style>
+.interview-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#password-gate {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#password-gate h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#password-gate input[type="password"] {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+}
+
+#password-gate button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 30px;
+    background: #71a6d8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#password-gate button:hover {
+    background: #5a8cc0;
+}
+
+#password-error {
+    color: #d87171;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#interview-content {
+    display: none;
+}
+
+#interview-content h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#interview-content .tagline {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+#interview-content .description {
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+#chat-embed-placeholder {
+    border: 2px dashed #ddd;
+    background: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: #999;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#chat-embed-placeholder h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+#chat-embed-placeholder p {
+    font-size: 14px;
+    color: #bbb;
+    max-width: 400px;
+}
+</style>
+
+<div class="interview-container">
+    <!-- Password Gate -->
+    <div id="password-gate">
+        <h2>Enter Password to Continue</h2>
+        <input type="password" id="password-input" placeholder="Password" autocomplete="off">
+        <button onclick="checkPassword()">Submit</button>
+        <div id="password-error"></div>
+    </div>
+
+    <!-- Interview Content (hidden until password correct) -->
+    <div id="interview-content">
+        <h1>Interview Kevin's Work</h1>
+        <p class="tagline">Building AI-Confident Humans</p>
+        <p class="description">
+            Answers come from Kevin's assessments, portfolio, and teaching notes — not free invention.
+        </p>
+
+        <div id="chat-embed-placeholder">
+            <div>
+                <h3>Claude chat embed goes here</h3>
+                <p>
+                    The Claude Artifact/Project link will be wired after Kevin publishes it.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// <!-- Kevin: set INTERVIEW_PASSWORD -->
+const INTERVIEW_PASSWORD = 'CHANGE_ME';
+
+function checkPassword() {
+    const input = document.getElementById('password-input');
+    const error = document.getElementById('password-error');
+    const gate = document.getElementById('password-gate');
+    const content = document.getElementById('interview-content');
+    
+    if (input.value === INTERVIEW_PASSWORD) {
+        gate.style.display = 'none';
+        content.style.display = 'block';
+        error.textContent = '';
+        
+        // Store in session so user doesn't need to re-enter on refresh
+        sessionStorage.setItem('interview_unlocked', 'true');
+    } else {
+        error.textContent = 'Incorrect password. Please try again.';
+        input.value = '';
+        input.focus();
+    }
+}
+
+// Allow Enter key to submit
+document.getElementById('password-input')?.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        checkPassword();
+    }
+});
+
+// Check if already unlocked in this session
+if (sessionStorage.getItem('interview_unlocked') === 'true') {
+    document.getElementById('password-gate').style.display = 'none';
+    document.getElementById('interview-content').style.display = 'block';
+}
+
+// Focus password input on load
+window.addEventListener('load', function() {
+    if (sessionStorage.getItem('interview_unlocked') !== 'true') {
+        document.getElementById('password-input')?.focus();
+    }
+});
+</script>
