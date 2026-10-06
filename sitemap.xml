@@ -19,4 +19,7 @@
     {% endif %}
     {% endif %}
     {% endfor %}
+    <url>
+        <loc>https://www.kevnk.com/habits/</loc>
+    </url>
 </urlset>
